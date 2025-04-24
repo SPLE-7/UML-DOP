@@ -19,20 +19,22 @@ import javax.persistence.OneToMany;
 @Table(name="daftarbuku_impl")
 public class DaftarBukuImpl extends DaftarBukuComponent {
 
-	public DaftarBukuImpl(int idBuku, String judulBuku, String penulis, String penerbit, int jumlahHalaman) {
+	public DaftarBukuImpl(int idBuku, String judulBuku, String penulis, String penerbit, int jumlahHalaman, String deskripsiBuku) {
 		this.idBuku = idBuku;
 		this.judulBuku = judulBuku;
 		this.penulis = penulis;
 		this.penerbit = penerbit;
 		this.jumlahHalaman = jumlahHalaman;
+		this.deskripsiBuku = deskripsiBuku;
 	}
 
-	public DaftarBukuImpl(String judulBuku, String penulis, String penerbit, int jumlahHalaman) {
+	public DaftarBukuImpl(String judulBuku, String penulis, String penerbit, int jumlahHalaman, String deskripsiBuku) {
 		this.idBuku =  idBuku.randomUUID();;
 		this.judulBuku = judulBuku;
 		this.penulis = penulis;
 		this.penerbit = penerbit;
 		this.jumlahHalaman = jumlahHalaman;
+		this.deskripsiBuku = deskripsiBuku;
 	}
 
 	public DaftarBukuImpl() { }
@@ -72,6 +74,13 @@ public class DaftarBukuImpl extends DaftarBukuComponent {
 	public void setJumlahHalaman(int jumlahHalaman) {
 		this.jumlahHalaman = jumlahHalaman;
 	}
+	public String getDeskripsiBuku() {
+		return this.deskripsiBuku;
+	}
+
+	public void setDeskripsiBuku(String deskripsiBuku) {
+		this.deskripsiBuku = deskripsiBuku;
+	}
 
 	
 	public HashMap<String, Object> toHashMap() {
@@ -81,6 +90,7 @@ public class DaftarBukuImpl extends DaftarBukuComponent {
 		daftarbukuMap.put("penulis",getPenulis());
 		daftarbukuMap.put("penerbit",getPenerbit());
 		daftarbukuMap.put("jumlahHalaman",getJumlahHalaman());
+		daftarbukuMap.put("deskripsiBuku",getDeskripsiBuku());
 
         return daftarbukuMap;
     }

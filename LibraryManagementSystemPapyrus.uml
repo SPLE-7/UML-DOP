@@ -23,6 +23,9 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_cqNL0CCxEfCyTIMTUXcE5w" name="jumlahHalaman" visibility="protected" isUnique="false">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_v_u7cCDEEfCyTIMTUXcE5w" name="deskripsiBuku" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_9cPl4CCuEfCyTIMTUXcE5w" client="_1DXPYCCuEfCyTIMTUXcE5w" supplier="_weKl4CCuEfCyTIMTUXcE5w" contract="_weKl4CCuEfCyTIMTUXcE5w"/>
         </packagedElement>
       </packagedElement>

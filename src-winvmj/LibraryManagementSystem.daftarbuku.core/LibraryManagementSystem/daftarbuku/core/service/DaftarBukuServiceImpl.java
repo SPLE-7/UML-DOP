@@ -37,6 +37,7 @@ public class DaftarBukuServiceImpl extends DaftarBukuServiceComponent{
 		String penerbit = (String) requestBody.get("penerbit");
 		String jumlahHalamanStr = (String) requestBody.get("jumlahHalaman");
 		int jumlahHalaman = Integer.parseInt(jumlahHalamanStr);
+		String deskripsiBuku = (String) requestBody.get("deskripsiBuku");
 		
 		//to do: fix association attributes
 		DaftarBuku DaftarBuku = DaftarBukuFactory.createDaftarBuku(
@@ -46,6 +47,7 @@ public class DaftarBukuServiceImpl extends DaftarBukuServiceComponent{
 		, penulis
 		, penerbit
 		, jumlahHalaman
+		, deskripsiBuku
 		);
 		Repository.saveObject(daftarbuku);
 		return daftarbuku;
@@ -57,10 +59,11 @@ public class DaftarBukuServiceImpl extends DaftarBukuServiceComponent{
 		String penerbit = (String) vmjExchange.getRequestBodyForm("penerbit");
 		String jumlahHalamanStr = (String) vmjExchange.getRequestBodyForm("jumlahHalaman");
 		int jumlahHalaman = Integer.parseInt(jumlahHalamanStr);
+		String deskripsiBuku = (String) vmjExchange.getRequestBodyForm("deskripsiBuku");
 		
 		//to do: fix association attributes
 		
-		DaftarBuku daftarbuku = DaftarBukuFactory.createDaftarBuku("LibraryManagementSystem.daftarbuku.core.DaftarBukuImpl", judulBuku, penulis, penerbit, jumlahHalaman);
+		DaftarBuku daftarbuku = DaftarBukuFactory.createDaftarBuku("LibraryManagementSystem.daftarbuku.core.DaftarBukuImpl", judulBuku, penulis, penerbit, jumlahHalaman, deskripsiBuku);
 		return daftarbuku;
 	}
 
@@ -74,6 +77,7 @@ public class DaftarBukuServiceImpl extends DaftarBukuServiceComponent{
 		daftarbuku.setPenerbit((String) requestBody.get("penerbit"));
 		String jumlahHalamanStr = (String) requestBody.get("jumlahHalaman");
 		daftarbuku.setJumlahHalaman(Integer.parseInt(jumlahHalamanStr));
+		daftarbuku.setDeskripsiBuku((String) requestBody.get("deskripsiBuku"));
 		
 		Repository.updateObject(daftarbuku);
 		

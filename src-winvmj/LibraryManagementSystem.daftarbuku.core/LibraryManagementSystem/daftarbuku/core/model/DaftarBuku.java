@@ -14,5 +14,7 @@ public interface DaftarBuku {
 	public void setPenerbit(String penerbit);
 	public int getJumlahHalaman();
 	public void setJumlahHalaman(int jumlahHalaman);
+	public String getDeskripsiBuku();
+	public void setDeskripsiBuku(String deskripsiBuku);
 	HashMap<String, Object> toHashMap();
 }

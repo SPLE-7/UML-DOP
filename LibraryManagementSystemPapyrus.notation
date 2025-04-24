@@ -58,6 +58,10 @@
                 <element xmi:type="uml:Property" href="LibraryManagementSystemPapyrus.uml#_cqNL0CCxEfCyTIMTUXcE5w"/>
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_cqb1USCxEfCyTIMTUXcE5w"/>
               </children>
+              <children xmi:type="notation:Shape" xmi:id="_wAo6YCDEEfCyTIMTUXcE5w" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="LibraryManagementSystemPapyrus.uml#_v_u7cCDEEfCyTIMTUXcE5w"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_wAo6YSDEEfCyTIMTUXcE5w"/>
+              </children>
               <styles xmi:type="notation:TitleStyle" xmi:id="_1DkDsiCuEfCyTIMTUXcE5w"/>
               <styles xmi:type="notation:SortingStyle" xmi:id="_1DkDsyCuEfCyTIMTUXcE5w"/>
               <styles xmi:type="notation:FilteringStyle" xmi:id="_1DkDtCCuEfCyTIMTUXcE5w"/>

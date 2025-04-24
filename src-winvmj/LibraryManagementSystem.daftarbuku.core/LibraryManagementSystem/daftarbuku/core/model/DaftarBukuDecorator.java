@@ -67,6 +67,12 @@ public abstract class DaftarBukuDecorator extends DaftarBukuComponent{
 	public void setJumlahHalaman(int jumlahHalaman) {
 		record.setJumlahHalaman(jumlahHalaman);
 	}
+	public String getDeskripsiBuku() {
+		return record.getDeskripsiBuku();
+	}
+	public void setDeskripsiBuku(String deskripsiBuku) {
+		record.setDeskripsiBuku(deskripsiBuku);
+	}
 
 
 	public HashMap<String, Object> toHashMap() {
