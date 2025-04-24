@@ -32,7 +32,7 @@
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_9cPl4CCuEfCyTIMTUXcE5w" client="_1DXPYCCuEfCyTIMTUXcE5w" supplier="_weKl4CCuEfCyTIMTUXcE5w" contract="_weKl4CCuEfCyTIMTUXcE5w"/>
         </packagedElement>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="__fsKsCC2EfCyTIMTUXcE5w" name="DPhysicalOnly">
+      <packagedElement xmi:type="uml:Package" xmi:id="__fsKsCC2EfCyTIMTUXcE5w" name="DBukuFisik">
         <packagedElement xmi:type="uml:Class" xmi:id="_MLDDACC3EfCyTIMTUXcE5w" name="DaftarBukuImpl">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_3pZHYiC3EfCyTIMTUXcE5w" name="daftarbukuimpl" type="_1DXPYCCuEfCyTIMTUXcE5w" association="_3pWEECC3EfCyTIMTUXcE5w">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3paVgCC3EfCyTIMTUXcE5w"/>
@@ -43,7 +43,7 @@
           </ownedAttribute>
         </packagedElement>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_DfF_gCC3EfCyTIMTUXcE5w" name="DDigitalSupport">
+      <packagedElement xmi:type="uml:Package" xmi:id="_DfF_gCC3EfCyTIMTUXcE5w" name="DBukuDigital">
         <packagedElement xmi:type="uml:Class" xmi:id="_ZqyloCC3EfCyTIMTUXcE5w" name="DaftarBukuImpl">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_8ju6ciC3EfCyTIMTUXcE5w" name="daftarbukuimpl" type="_1DXPYCCuEfCyTIMTUXcE5w" association="_8jseMCC3EfCyTIMTUXcE5w">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8jvhgCC3EfCyTIMTUXcE5w"/>
