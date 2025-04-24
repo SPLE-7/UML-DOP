@@ -21,6 +21,7 @@ public abstract class DaftarBukuComponent implements DaftarBuku{
 	protected String penerbit;
 	protected int jumlahHalaman;
 	protected String deskripsiBuku;
+	protected String genre;
 	protected String objectName = DaftarBukuComponent.class.getName();
 
 	public DaftarBukuComponent() {
@@ -28,7 +29,7 @@ public abstract class DaftarBukuComponent implements DaftarBuku{
 	} 
 
 	public DaftarBukuComponent(
-        int idBuku, String judulBuku, String penulis, String penerbit, int jumlahHalaman, String deskripsiBuku
+        int idBuku, String judulBuku, String penulis, String penerbit, int jumlahHalaman, String deskripsiBuku, String genre
     ) {
         this.idBuku = idBuku;
         this.judulBuku = judulBuku;
@@ -36,6 +37,7 @@ public abstract class DaftarBukuComponent implements DaftarBuku{
         this.penerbit = penerbit;
         this.jumlahHalaman = jumlahHalaman;
         this.deskripsiBuku = deskripsiBuku;
+        this.genre = genre;
     }
 
 	public int getIdBuku() {
@@ -80,6 +82,13 @@ public abstract class DaftarBukuComponent implements DaftarBuku{
 	public void setDeskripsiBuku(String deskripsiBuku) {
 		this.deskripsiBuku = deskripsiBuku;
 	}
+	public String getGenre() {
+		return this.genre;
+	}
+
+	public void setGenre(String genre) {
+		this.genre = genre;
+	}
  
 
 	@Override
@@ -91,6 +100,7 @@ public abstract class DaftarBukuComponent implements DaftarBuku{
             " penerbit='" + getPenerbit() + "'" +
             " jumlahHalaman='" + getJumlahHalaman() + "'" +
             " deskripsiBuku='" + getDeskripsiBuku() + "'" +
+            " genre='" + getGenre() + "'" +
             "}";
     }
 	

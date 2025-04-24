@@ -73,6 +73,12 @@ public abstract class DaftarBukuDecorator extends DaftarBukuComponent{
 	public void setDeskripsiBuku(String deskripsiBuku) {
 		record.setDeskripsiBuku(deskripsiBuku);
 	}
+	public String getGenre() {
+		return record.getGenre();
+	}
+	public void setGenre(String genre) {
+		record.setGenre(genre);
+	}
 
 
 	public HashMap<String, Object> toHashMap() {
