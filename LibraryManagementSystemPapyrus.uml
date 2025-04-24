@@ -1,19 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_UREIgCBiEfC-B6xQo0cSXw" name="LibraryManagementSystemPapyrus">
-  <packageImport xmi:type="uml:PackageImport" xmi:id="_UXoDgCBiEfC-B6xQo0cSXw">
-    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
-  </packageImport>
-  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UVNBoCBiEfC-B6xQo0cSXw">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UVWLkCBiEfC-B6xQo0cSXw" source="PapyrusVersion">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UVWLkSBiEfC-B6xQo0cSXw" key="Version" value="0.0.4"/>
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UVWLkiBiEfC-B6xQo0cSXw" key="Comment" value=""/>
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UVWLkyBiEfC-B6xQo0cSXw" key="Copyright" value=""/>
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UVWLlCBiEfC-B6xQo0cSXw" key="Date" value="2024-10-21"/>
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UVWLlSBiEfC-B6xQo0cSXw" key="Author" value=""/>
-    </eAnnotations>
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UVRTECBiEfC-B6xQo0cSXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <references xmi:type="ecore:EPackage" href="pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_-5XC0I-gEe-JbtsgPnxLSg"/>
-    </eAnnotations>
-    <appliedProfile xmi:type="uml:Profile" href="pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_XI61gJkHEeyPP7xacetQkQ"/>
-  </profileApplication>
-</uml:Model>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:umlvmprofile="pathmap://UML_PROFILES/uml-vm-profile.profile.uml" xsi:schemaLocation="pathmap://UML_PROFILES/uml-vm-profile.profile.uml pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_-5XC0I-gEe-JbtsgPnxLSg">
+  <uml:Model xmi:id="_UREIgCBiEfC-B6xQo0cSXw" name="LibraryManagementSystemPapyrus">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_UXoDgCBiEfC-B6xQo0cSXw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_MQzb0CCuEfCyTIMTUXcE5w" name="LibraryManagementSystem">
+      <packagedElement xmi:type="uml:Package" xmi:id="_bWVQgCCuEfCyTIMTUXcE5w" name="MDaftarBuku">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_weKl4CCuEfCyTIMTUXcE5w" name="DaftarBuku"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_1DXPYCCuEfCyTIMTUXcE5w" name="DaftarBukuImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_1khw0CCwEfCyTIMTUXcE5w" name="idBuku" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_BgKHQCCvEfCyTIMTUXcE5w" name="judulBuku" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_AhvFQCCxEfCyTIMTUXcE5w" name="penulis" visibility="protected" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HUjc4CCxEfCyTIMTUXcE5w" name="penerbit" visibility="protected" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_cqNL0CCxEfCyTIMTUXcE5w" name="jumlahHalaman" visibility="protected" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_9cPl4CCuEfCyTIMTUXcE5w" client="_1DXPYCCuEfCyTIMTUXcE5w" supplier="_weKl4CCuEfCyTIMTUXcE5w" contract="_weKl4CCuEfCyTIMTUXcE5w"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="__fsKsCC2EfCyTIMTUXcE5w" name="DPhysicalOnly">
+        <packagedElement xmi:type="uml:Class" xmi:id="_MLDDACC3EfCyTIMTUXcE5w" name="DaftarBukuImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3pZHYiC3EfCyTIMTUXcE5w" name="daftarbukuimpl" type="_1DXPYCCuEfCyTIMTUXcE5w" association="_3pWEECC3EfCyTIMTUXcE5w">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3paVgCC3EfCyTIMTUXcE5w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3paVgSC3EfCyTIMTUXcE5w" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_FbJAACC4EfCyTIMTUXcE5w" name="jumlahBuku" visibility="protected" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_DfF_gCC3EfCyTIMTUXcE5w" name="DDigitalSupport">
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZqyloCC3EfCyTIMTUXcE5w" name="DaftarBukuImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_8ju6ciC3EfCyTIMTUXcE5w" name="daftarbukuimpl" type="_1DXPYCCuEfCyTIMTUXcE5w" association="_8jseMCC3EfCyTIMTUXcE5w">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8jvhgCC3EfCyTIMTUXcE5w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8jvhgSC3EfCyTIMTUXcE5w" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OYi_4CC4EfCyTIMTUXcE5w" name="linkBuku" visibility="protected" isUnique="false" aggregation="composite">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3pWEECC3EfCyTIMTUXcE5w" memberEnd="_3pZHYiC3EfCyTIMTUXcE5w _3paVgiC3EfCyTIMTUXcE5w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3pZHYCC3EfCyTIMTUXcE5w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3pZHYSC3EfCyTIMTUXcE5w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_3paVgiC3EfCyTIMTUXcE5w" name="daftarbukuimpl" type="_MLDDACC3EfCyTIMTUXcE5w" association="_3pWEECC3EfCyTIMTUXcE5w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_8jseMCC3EfCyTIMTUXcE5w" memberEnd="_8ju6ciC3EfCyTIMTUXcE5w _8jvhgiC3EfCyTIMTUXcE5w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8ju6cCC3EfCyTIMTUXcE5w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8ju6cSC3EfCyTIMTUXcE5w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_8jvhgiC3EfCyTIMTUXcE5w" name="daftarbukuimpl" type="_ZqyloCC3EfCyTIMTUXcE5w" association="_8jseMCC3EfCyTIMTUXcE5w"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UVNBoCBiEfC-B6xQo0cSXw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UVWLkCBiEfC-B6xQo0cSXw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UVWLkSBiEfC-B6xQo0cSXw" key="Version" value="0.0.4"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UVWLkiBiEfC-B6xQo0cSXw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UVWLkyBiEfC-B6xQo0cSXw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UVWLlCBiEfC-B6xQo0cSXw" key="Date" value="2024-10-21"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UVWLlSBiEfC-B6xQo0cSXw" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UVRTECBiEfC-B6xQo0cSXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_-5XC0I-gEe-JbtsgPnxLSg"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_XI61gJkHEeyPP7xacetQkQ"/>
+    </profileApplication>
+  </uml:Model>
+  <umlvmprofile:vm xmi:id="_PXnbwCCuEfCyTIMTUXcE5w" base_Package="_MQzb0CCuEfCyTIMTUXcE5w"/>
+  <umlvmprofile:module xmi:id="_tNFPoCCuEfCyTIMTUXcE5w" base_Package="_bWVQgCCuEfCyTIMTUXcE5w"/>
+  <umlvmprofile:modifiedClass xmi:id="_OaG7kCC3EfCyTIMTUXcE5w" base_Class="_MLDDACC3EfCyTIMTUXcE5w"/>
+  <umlvmprofile:modifiedClass xmi:id="_cxOLECC3EfCyTIMTUXcE5w" base_Class="_ZqyloCC3EfCyTIMTUXcE5w"/>
+  <umlvmprofile:modifies xmi:id="_7OipICC3EfCyTIMTUXcE5w" base_Association="_3pWEECC3EfCyTIMTUXcE5w"/>
+  <umlvmprofile:modifies xmi:id="_9hzsQCC3EfCyTIMTUXcE5w" base_Association="_8jseMCC3EfCyTIMTUXcE5w"/>
+  <umlvmprofile:delta xmi:id="_gCXWQCC4EfCyTIMTUXcE5w" base_Package="__fsKsCC2EfCyTIMTUXcE5w"/>
+  <umlvmprofile:delta xmi:id="_iKPBsCC4EfCyTIMTUXcE5w" base_Package="_DfF_gCC3EfCyTIMTUXcE5w"/>
+</xmi:XMI>
