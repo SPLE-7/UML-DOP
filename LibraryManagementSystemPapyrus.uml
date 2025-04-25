@@ -87,6 +87,13 @@
           </ownedOperation>
         </packagedElement>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_uUxXICHEEfCVTpuhwdZlGw" name="MStatistik">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_y5HFACHEEfCVTpuhwdZlGw" name="Statistik"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_FwvSUCHFEfCVTpuhwdZlGw" name="StatistikImpl">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_McgmwCHFEfCVTpuhwdZlGw" client="_FwvSUCHFEfCVTpuhwdZlGw" supplier="_y5HFACHEEfCVTpuhwdZlGw" contract="_y5HFACHEEfCVTpuhwdZlGw"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_tiphMCHFEfCVTpuhwdZlGw" name="hitungJumlahBuku"/>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_3pWEECC3EfCyTIMTUXcE5w" memberEnd="_3pZHYiC3EfCyTIMTUXcE5w _3paVgiC3EfCyTIMTUXcE5w">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3pZHYCC3EfCyTIMTUXcE5w" source="org.eclipse.papyrus">
@@ -145,4 +152,5 @@
   <umlvmprofile:modifiedClass xmi:id="_xvNesCG5EfCSL5sBBSYZEw" base_Class="_HMsJYCG5EfCSL5sBBSYZEw"/>
   <umlvmprofile:adds xmi:id="_RmqCUCHDEfCSL5sBBSYZEw" base_Property="_OYi_4CC4EfCyTIMTUXcE5w"/>
   <umlvmprofile:adds xmi:id="_SXnlMCHDEfCSL5sBBSYZEw" base_Property="_FbJAACC4EfCyTIMTUXcE5w"/>
+  <umlvmprofile:module xmi:id="_xTwQwCHEEfCVTpuhwdZlGw" base_Package="_uUxXICHEEfCVTpuhwdZlGw"/>
 </xmi:XMI>
