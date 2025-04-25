@@ -1,4 +1,4 @@
-package LibraryManagementSystem.daftarbuku.digitalsupport;
+package LibraryManagementSystem.daftarbuku.bukudigital;
 
 import java.util.*;
 import vmj.routing.route.Route;
@@ -12,8 +12,8 @@ import LibraryManagementSystem.daftarbuku.core.DaftarBukuDecorator;
 import LibraryManagementSystem.daftarbuku.core.DaftarBuku;
 import LibraryManagementSystem.daftarbuku.core.DaftarBukuComponent;
 
-@Entity(name="daftarbuku_digitalsupport")
-@Table(name="daftarbuku_digitalsupport")
+@Entity(name="daftarbuku_bukudigital")
+@Table(name="daftarbuku_bukudigital")
 public class DaftarBukuImpl extends DaftarBukuDecorator {
 
 	public DaftarBukuImpl(

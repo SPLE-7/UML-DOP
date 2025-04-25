@@ -1,6 +1,6 @@
-module LibraryManagementSystem.daftarbuku.digitalsupport {
+module LibraryManagementSystem.daftarbuku.bukudigital {
 	requires LibraryManagementSystem.daftarbuku.core;
-    exports LibraryManagementSystem.daftarbuku.digitalsupport;
+    exports LibraryManagementSystem.daftarbuku.bukudigital;
 
 	requires vmj.routing.route;
 	requires vmj.hibernate.integrator;
@@ -10,5 +10,5 @@ module LibraryManagementSystem.daftarbuku.digitalsupport {
 	requires java.naming;
 	requires java.net.http;
 
-	opens LibraryManagementSystem.daftarbuku.digitalsupport to org.hibernate.orm.core, gson, vmj.hibernate.integrator;
+	opens LibraryManagementSystem.daftarbuku.bukudigital to org.hibernate.orm.core, gson, vmj.hibernate.integrator;
 }

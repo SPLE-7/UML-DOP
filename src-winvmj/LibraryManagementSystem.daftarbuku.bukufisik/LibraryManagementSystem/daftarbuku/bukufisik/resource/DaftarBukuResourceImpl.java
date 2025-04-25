@@ -1,4 +1,4 @@
-package LibraryManagementSystem.daftarbuku.physicalonly;
+package LibraryManagementSystem.daftarbuku.bukufisik;
 import java.util.*;
 
 import vmj.routing.route.Route;
@@ -14,7 +14,7 @@ public class DaftarBukuResourceImpl extends DaftarBukuResourceDecorator {
     }
 
     // @Restriced(permission = "")
-    @Route(url="call/physicalonly/save")
+    @Route(url="call/bukufisik/save")
     public List<HashMap<String,Object>> save(VMJExchange vmjExchange){
 		if (vmjExchange.getHttpMethod().equals("OPTIONS")) {
 			return null;
@@ -29,7 +29,7 @@ public class DaftarBukuResourceImpl extends DaftarBukuResourceDecorator {
 		int jumlahBuku = Integer.parseInt(jumlahBukuStr);
 		
 		  = record.create(vmjExchange);
-		 deco = Factory.create("LibraryManagementSystem.physicalonly.core.DaftarBukuImpl", , jumlahBuku);
+		 deco = Factory.create("LibraryManagementSystem.bukufisik.core.DaftarBukuImpl", , jumlahBuku);
 			return deco;
 	}
 
@@ -40,12 +40,12 @@ public class DaftarBukuResourceImpl extends DaftarBukuResourceDecorator {
 		int recordId = (((Decorator) saved.getRecord()).getId();
 		
 		  = record.create(vmjExchange);
-		 deco = Factory.create("LibraryManagementSystem.physicalonly.core.DaftarBukuImpl", id, , jumlahBuku);
+		 deco = Factory.create("LibraryManagementSystem.bukufisik.core.DaftarBukuImpl", id, , jumlahBuku);
 			return deco;
 	}
 
     // @Restriced(permission = "")
-    @Route(url="call/physicalonly/update")
+    @Route(url="call/bukufisik/update")
     public HashMap<String, Object> update(VMJExchange vmjExchange){
 		if (vmjExchange.getHttpMethod().equals("OPTIONS")) {
 			return null;
@@ -65,13 +65,13 @@ public class DaftarBukuResourceImpl extends DaftarBukuResourceDecorator {
 	}
 
 	// @Restriced(permission = "")
-    @Route(url="call/physicalonly/detail")
+    @Route(url="call/bukufisik/detail")
     public HashMap<String, Object> get(VMJExchange vmjExchange){
 		return record.getDaftarBuku(vmjExchange);
 	}
 
 	// @Restriced(permission = "")
-    @Route(url="call/physicalonly/list")
+    @Route(url="call/bukufisik/list")
     public List<HashMap<String,Object>> getAll(VMJExchange vmjExchange){
 		List<> List = Repository.getAllObject("_impl");
 		return transformListToHashMap(List);
@@ -87,7 +87,7 @@ public class DaftarBukuResourceImpl extends DaftarBukuResourceDecorator {
 	}
 
 	// @Restriced(permission = "")
-    @Route(url="call/physicalonly/delete")
+    @Route(url="call/bukufisik/delete")
     public List<HashMap<String,Object>> deleteDaftarBuku(VMJExchange vmjExchange){
 		if (vmjExchange.getHttpMethod().equals("OPTIONS")) {
 			return null;

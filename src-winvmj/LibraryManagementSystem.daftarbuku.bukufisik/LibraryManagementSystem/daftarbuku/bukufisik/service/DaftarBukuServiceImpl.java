@@ -1,4 +1,4 @@
-package LibraryManagementSystem.daftarbuku.physicalonly;
+package LibraryManagementSystem.daftarbuku.bukufisik;
 
 import java.util.*;
 

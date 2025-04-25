@@ -1,4 +1,4 @@
-package LibraryManagementSystem.daftarbuku.physicalonly;
+package LibraryManagementSystem.daftarbuku.bukufisik;
 
 import java.util.*;
 import vmj.routing.route.Route;
@@ -12,8 +12,8 @@ import LibraryManagementSystem.daftarbuku.core.DaftarBukuDecorator;
 import LibraryManagementSystem.daftarbuku.core.DaftarBuku;
 import LibraryManagementSystem.daftarbuku.core.DaftarBukuComponent;
 
-@Entity(name="daftarbuku_physicalonly")
-@Table(name="daftarbuku_physicalonly")
+@Entity(name="daftarbuku_bukufisik")
+@Table(name="daftarbuku_bukufisik")
 public class DaftarBukuImpl extends DaftarBukuDecorator {
 
 	public DaftarBukuImpl(

@@ -1,4 +1,4 @@
-package LibraryManagementSystem.daftarbuku.digitalsupport;
+package LibraryManagementSystem.daftarbuku.bukudigital;
 import java.util.*;
 
 import vmj.routing.route.Route;
@@ -14,7 +14,7 @@ public class DaftarBukuResourceImpl extends DaftarBukuResourceDecorator {
     }
 
     // @Restriced(permission = "")
-    @Route(url="call/digitalsupport/save")
+    @Route(url="call/bukudigital/save")
     public List<HashMap<String,Object>> save(VMJExchange vmjExchange){
 		if (vmjExchange.getHttpMethod().equals("OPTIONS")) {
 			return null;
@@ -28,7 +28,7 @@ public class DaftarBukuResourceImpl extends DaftarBukuResourceDecorator {
 		String linkBuku = (String) vmjExchange.getRequestBodyForm("linkBuku");
 		
 		  = record.create(vmjExchange);
-		 deco = Factory.create("LibraryManagementSystem.digitalsupport.core.DaftarBukuImpl", , linkBuku);
+		 deco = Factory.create("LibraryManagementSystem.bukudigital.core.DaftarBukuImpl", , linkBuku);
 			return deco;
 	}
 
@@ -38,12 +38,12 @@ public class DaftarBukuResourceImpl extends DaftarBukuResourceDecorator {
 		int recordId = (((Decorator) saved.getRecord()).getId();
 		
 		  = record.create(vmjExchange);
-		 deco = Factory.create("LibraryManagementSystem.digitalsupport.core.DaftarBukuImpl", id, , linkBuku);
+		 deco = Factory.create("LibraryManagementSystem.bukudigital.core.DaftarBukuImpl", id, , linkBuku);
 			return deco;
 	}
 
     // @Restriced(permission = "")
-    @Route(url="call/digitalsupport/update")
+    @Route(url="call/bukudigital/update")
     public HashMap<String, Object> update(VMJExchange vmjExchange){
 		if (vmjExchange.getHttpMethod().equals("OPTIONS")) {
 			return null;
@@ -63,13 +63,13 @@ public class DaftarBukuResourceImpl extends DaftarBukuResourceDecorator {
 	}
 
 	// @Restriced(permission = "")
-    @Route(url="call/digitalsupport/detail")
+    @Route(url="call/bukudigital/detail")
     public HashMap<String, Object> get(VMJExchange vmjExchange){
 		return record.getDaftarBuku(vmjExchange);
 	}
 
 	// @Restriced(permission = "")
-    @Route(url="call/digitalsupport/list")
+    @Route(url="call/bukudigital/list")
     public List<HashMap<String,Object>> getAll(VMJExchange vmjExchange){
 		List<> List = Repository.getAllObject("_impl");
 		return transformListToHashMap(List);
@@ -85,7 +85,7 @@ public class DaftarBukuResourceImpl extends DaftarBukuResourceDecorator {
 	}
 
 	// @Restriced(permission = "")
-    @Route(url="call/digitalsupport/delete")
+    @Route(url="call/bukudigital/delete")
     public List<HashMap<String,Object>> deleteDaftarBuku(VMJExchange vmjExchange){
 		if (vmjExchange.getHttpMethod().equals("OPTIONS")) {
 			return null;

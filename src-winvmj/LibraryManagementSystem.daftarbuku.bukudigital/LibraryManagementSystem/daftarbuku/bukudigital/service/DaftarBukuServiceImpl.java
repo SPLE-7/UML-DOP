@@ -1,4 +1,4 @@
-package LibraryManagementSystem.daftarbuku.digitalsupport;
+package LibraryManagementSystem.daftarbuku.bukudigital;
 
 import java.util.*;
 
