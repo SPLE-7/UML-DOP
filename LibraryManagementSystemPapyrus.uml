@@ -91,8 +91,14 @@
       <packagedElement xmi:type="uml:Package" xmi:id="_uUxXICHEEfCVTpuhwdZlGw" name="MStatistik">
         <packagedElement xmi:type="uml:Interface" xmi:id="_y5HFACHEEfCVTpuhwdZlGw" name="Statistik"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_FwvSUCHFEfCVTpuhwdZlGw" name="StatistikImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_er2ycCHNEfCVTpuhwdZlGw" name="jumlahBuku" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_iphh4CHNEfCVTpuhwdZlGw" name="namaChart" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_McgmwCHFEfCVTpuhwdZlGw" client="_FwvSUCHFEfCVTpuhwdZlGw" supplier="_y5HFACHEEfCVTpuhwdZlGw" contract="_y5HFACHEEfCVTpuhwdZlGw"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_tiphMCHFEfCVTpuhwdZlGw" name="hitungJumlahBuku"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_tiphMCHFEfCVTpuhwdZlGw" name="hitungJumlahBuku" visibility="protected"/>
         </packagedElement>
       </packagedElement>
     </packagedElement>
