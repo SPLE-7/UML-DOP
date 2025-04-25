@@ -64,28 +64,7 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_9xy8QCG4EfCSL5sBBSYZEw" name="nama" visibility="protected" isUnique="false">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_ymrjICHCEfCSL5sBBSYZEw" name="daftarbukuimpl" type="_1DXPYCCuEfCyTIMTUXcE5w" association="_ympt8CHCEfCSL5sBBSYZEw">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z7D8ICHCEfCSL5sBBSYZEw"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z77e0CHCEfCSL5sBBSYZEw" value="*"/>
-          </ownedAttribute>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_BVLjcCG5EfCSL5sBBSYZEw" client="_1dlqYCG4EfCSL5sBBSYZEw" supplier="_za9rUCG4EfCSL5sBBSYZEw" contract="_za9rUCG4EfCSL5sBBSYZEw"/>
-        </packagedElement>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_DX0JkCG5EfCSL5sBBSYZEw" name="DPeminjamanBuku">
-        <packagedElement xmi:type="uml:Class" xmi:id="_HMsJYCG5EfCSL5sBBSYZEw" name="AkunImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_LkIDsCG5EfCSL5sBBSYZEw" name="jumlahBukuPinjaman" visibility="protected" isUnique="false">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_ObLwYCG5EfCSL5sBBSYZEw"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_m7Gb4CG5EfCSL5sBBSYZEw" name="akunimpl" type="_1dlqYCG4EfCSL5sBBSYZEw" association="_m7CKcCG5EfCSL5sBBSYZEw">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m7L7cCG5EfCSL5sBBSYZEw"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m7T3QCG5EfCSL5sBBSYZEw" value="1"/>
-          </ownedAttribute>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_dz5m0CG5EfCSL5sBBSYZEw" name="tambahBuku">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_hjDZICG5EfCSL5sBBSYZEw" name="x">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-            </ownedParameter>
-          </ownedOperation>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_uUxXICHEEfCVTpuhwdZlGw" name="MStatistik">
@@ -101,6 +80,22 @@
           <ownedOperation xmi:type="uml:Operation" xmi:id="_tiphMCHFEfCVTpuhwdZlGw" name="hitungJumlahBuku" visibility="protected"/>
         </packagedElement>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_5T8O4CHOEfCSL5sBBSYZEw" name="MPeminjamanBuku">
+        <packagedElement xmi:type="uml:Interface" xmi:id="__zdQACHOEfCSL5sBBSYZEw" name="PeminjamanBuku"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_FRoI4CHPEfCSL5sBBSYZEw" name="PeminjamanBukuImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_L4-3YCHPEfCSL5sBBSYZEw" name="idPeminjamanBuku" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hYfF4CHPEfCSL5sBBSYZEw" name="status" visibility="protected" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_nDoDwiHPEfCSL5sBBSYZEw" name="akunimpl" type="_1dlqYCG4EfCSL5sBBSYZEw" association="_nDncsCHPEfCSL5sBBSYZEw">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nDoDwyHPEfCSL5sBBSYZEw"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_wijcUiHPEfCSL5sBBSYZEw" name="daftarbukuimpl" type="_1DXPYCCuEfCyTIMTUXcE5w" association="_wii1QCHPEfCSL5sBBSYZEw"/>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_J7aXcCHPEfCSL5sBBSYZEw" client="_FRoI4CHPEfCSL5sBBSYZEw" supplier="__zdQACHOEfCSL5sBBSYZEw" contract="__zdQACHOEfCSL5sBBSYZEw"/>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_3pWEECC3EfCyTIMTUXcE5w" memberEnd="_3pZHYiC3EfCyTIMTUXcE5w _3paVgiC3EfCyTIMTUXcE5w">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3pZHYCC3EfCyTIMTUXcE5w" source="org.eclipse.papyrus">
@@ -114,21 +109,6 @@
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_8jvhgiC3EfCyTIMTUXcE5w" name="daftarbukuimpl" type="_ZqyloCC3EfCyTIMTUXcE5w" association="_8jseMCC3EfCyTIMTUXcE5w"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_m7CKcCG5EfCSL5sBBSYZEw" memberEnd="_m7Gb4CG5EfCSL5sBBSYZEw _m7ak8CG5EfCSL5sBBSYZEw">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_m7F00CG5EfCSL5sBBSYZEw" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m7F00SG5EfCSL5sBBSYZEw" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_m7ak8CG5EfCSL5sBBSYZEw" name="akunimpl" type="_HMsJYCG5EfCSL5sBBSYZEw" association="_m7CKcCG5EfCSL5sBBSYZEw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_ympt8CHCEfCSL5sBBSYZEw" visibility="protected" memberEnd="_ymrjICHCEfCSL5sBBSYZEw _ymsKMCHCEfCSL5sBBSYZEw">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ymq8ECHCEfCSL5sBBSYZEw" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ymq8ESHCEfCSL5sBBSYZEw" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_ymsKMCHCEfCSL5sBBSYZEw" name="akunimpl" type="_1dlqYCG4EfCSL5sBBSYZEw" association="_ympt8CHCEfCSL5sBBSYZEw">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0VEXkCHCEfCSL5sBBSYZEw"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0V-9kCHCEfCSL5sBBSYZEw" value="*"/>
-      </ownedEnd>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_KXc3YCHIEfCVTpuhwdZlGw" memberEnd="_KXeFgCHIEfCVTpuhwdZlGw _KXeFgyHIEfCVTpuhwdZlGw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KXdecCHIEfCVTpuhwdZlGw" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KXdecSHIEfCVTpuhwdZlGw" key="nature" value="UML_Nature"/>
@@ -136,6 +116,23 @@
       <ownedEnd xmi:type="uml:Property" xmi:id="_KXeFgyHIEfCVTpuhwdZlGw" name="daftarbukuimpl" type="_1DXPYCCuEfCyTIMTUXcE5w" association="_KXc3YCHIEfCVTpuhwdZlGw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OARYMCHIEfCVTpuhwdZlGw"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OAzjsCHIEfCVTpuhwdZlGw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_nDncsCHPEfCSL5sBBSYZEw" memberEnd="_nDoDwiHPEfCSL5sBBSYZEw _nDoq0CHPEfCSL5sBBSYZEw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nDoDwCHPEfCSL5sBBSYZEw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nDoDwSHPEfCSL5sBBSYZEw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_nDoq0CHPEfCSL5sBBSYZEw" name="peminjamanbukuimpl" type="_FRoI4CHPEfCSL5sBBSYZEw" association="_nDncsCHPEfCSL5sBBSYZEw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rrEwACHPEfCSL5sBBSYZEw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tugAUCHPEfCSL5sBBSYZEw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wii1QCHPEfCSL5sBBSYZEw" memberEnd="_wijcUiHPEfCSL5sBBSYZEw _wijcVSHPEfCSL5sBBSYZEw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wijcUCHPEfCSL5sBBSYZEw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wijcUSHPEfCSL5sBBSYZEw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_wijcVSHPEfCSL5sBBSYZEw" name="peminjamanbukuimpl" type="_FRoI4CHPEfCSL5sBBSYZEw" association="_wii1QCHPEfCSL5sBBSYZEw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zpAP4CHPEfCSL5sBBSYZEw"/>
       </ownedEnd>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UVNBoCBiEfC-B6xQo0cSXw">
@@ -161,12 +158,8 @@
   <umlvmprofile:delta xmi:id="_gCXWQCC4EfCyTIMTUXcE5w" base_Package="__fsKsCC2EfCyTIMTUXcE5w"/>
   <umlvmprofile:delta xmi:id="_iKPBsCC4EfCyTIMTUXcE5w" base_Package="_DfF_gCC3EfCyTIMTUXcE5w"/>
   <umlvmprofile:module xmi:id="_x2rOECG4EfCSL5sBBSYZEw" base_Package="_v4H2sCG4EfCSL5sBBSYZEw"/>
-  <umlvmprofile:delta xmi:id="_GDnogCG5EfCSL5sBBSYZEw" base_Package="_DX0JkCG5EfCSL5sBBSYZEw"/>
-  <umlvmprofile:adds xmi:id="_a5N-YCG5EfCSL5sBBSYZEw" base_Property="_LkIDsCG5EfCSL5sBBSYZEw"/>
-  <umlvmprofile:adds xmi:id="_fXZZ4CG5EfCSL5sBBSYZEw" base_Operation="_dz5m0CG5EfCSL5sBBSYZEw"/>
-  <umlvmprofile:modifies xmi:id="_pkdDwCG5EfCSL5sBBSYZEw" base_Association="_m7CKcCG5EfCSL5sBBSYZEw"/>
-  <umlvmprofile:modifiedClass xmi:id="_xvNesCG5EfCSL5sBBSYZEw" base_Class="_HMsJYCG5EfCSL5sBBSYZEw"/>
   <umlvmprofile:adds xmi:id="_RmqCUCHDEfCSL5sBBSYZEw" base_Property="_OYi_4CC4EfCyTIMTUXcE5w"/>
   <umlvmprofile:adds xmi:id="_SXnlMCHDEfCSL5sBBSYZEw" base_Property="_FbJAACC4EfCyTIMTUXcE5w"/>
   <umlvmprofile:module xmi:id="_xTwQwCHEEfCVTpuhwdZlGw" base_Package="_uUxXICHEEfCVTpuhwdZlGw"/>
+  <umlvmprofile:module xmi:id="_-8wRgCHOEfCSL5sBBSYZEw" base_Package="_5T8O4CHOEfCSL5sBBSYZEw"/>
 </xmi:XMI>

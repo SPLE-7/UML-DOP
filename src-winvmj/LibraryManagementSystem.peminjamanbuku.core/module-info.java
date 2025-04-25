@@ -1,7 +1,8 @@
-module LibraryManagementSystem.akun.peminjamanbuku {
+module LibraryManagementSystem.peminjamanbuku.core {
 	requires LibraryManagementSystem.akun.core;
-    exports LibraryManagementSystem.akun.peminjamanbuku;
-
+	requires LibraryManagementSystem.daftarbuku.core;
+	exports LibraryManagementSystem.peminjamanbuku;
+    exports LibraryManagementSystem.peminjamanbuku.core;
 	requires vmj.routing.route;
 	requires vmj.hibernate.integrator;
 	requires vmj.auth;
@@ -10,5 +11,5 @@ module LibraryManagementSystem.akun.peminjamanbuku {
 	requires java.naming;
 	requires java.net.http;
 
-	opens LibraryManagementSystem.akun.peminjamanbuku to org.hibernate.orm.core, gson, vmj.hibernate.integrator;
+	opens LibraryManagementSystem.peminjamanbuku.core to org.hibernate.orm.core, gson, vmj.hibernate.integrator;
 }

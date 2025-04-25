@@ -8,7 +8,5 @@ public interface Akun {
 	public void setIdAkun(int idAkun);
 	public String getNama();
 	public void setNama(String nama);
-	public DaftarBukuImpl getDaftarbukuimpl();
-	public void setDaftarbukuimpl(DaftarBukuImpl daftarbukuimpl);
 	HashMap<String, Object> toHashMap();
 }

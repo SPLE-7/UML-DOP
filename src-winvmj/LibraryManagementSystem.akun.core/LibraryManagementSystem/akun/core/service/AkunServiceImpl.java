@@ -39,7 +39,6 @@ public class AkunServiceImpl extends AkunServiceComponent{
 			"LibraryManagementSystem.akun.core.AkunImpl",
 		idAkun
 		, nama
-		, daftarbukuimpl
 		);
 		Repository.saveObject(akun);
 		return akun;
@@ -50,7 +49,7 @@ public class AkunServiceImpl extends AkunServiceComponent{
 		
 		//to do: fix association attributes
 		
-		Akun akun = AkunFactory.createAkun("LibraryManagementSystem.akun.core.AkunImpl", nama, daftarbukuimpl);
+		Akun akun = AkunFactory.createAkun("LibraryManagementSystem.akun.core.AkunImpl", nama);
 		return akun;
 	}
 

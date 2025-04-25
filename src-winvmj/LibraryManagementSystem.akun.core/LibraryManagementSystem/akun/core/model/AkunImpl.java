@@ -19,16 +19,14 @@ import javax.persistence.OneToMany;
 @Table(name="akun_impl")
 public class AkunImpl extends AkunComponent {
 
-	public AkunImpl(int idAkun, String nama, DaftarBukuImpl daftarbukuimpl) {
+	public AkunImpl(int idAkun, String nama) {
 		this.idAkun = idAkun;
 		this.nama = nama;
-		this.daftarbukuimpl = daftarbukuimpl;
 	}
 
-	public AkunImpl(String nama, DaftarBukuImpl daftarbukuimpl) {
+	public AkunImpl(String nama) {
 		this.idAkun =  idAkun.randomUUID();;
 		this.nama = nama;
-		this.daftarbukuimpl = daftarbukuimpl;
 	}
 
 	public AkunImpl() { }
@@ -53,7 +51,6 @@ public class AkunImpl extends AkunComponent {
         HashMap<String, Object> akunMap = new HashMap<String,Object>();
 		akunMap.put("idAkun",getIdAkun());
 		akunMap.put("nama",getNama());
-		akunMap.put("daftarbukuimpl",getDaftarbukuimpl());
 
         return akunMap;
     }

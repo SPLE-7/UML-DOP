@@ -50,6 +50,7 @@ public class DaftarBukuServiceImpl extends DaftarBukuServiceComponent{
 		, jumlahHalaman
 		, deskripsiBuku
 		, genre
+		, statistikimpl
 		);
 		Repository.saveObject(daftarbuku);
 		return daftarbuku;
@@ -66,7 +67,7 @@ public class DaftarBukuServiceImpl extends DaftarBukuServiceComponent{
 		
 		//to do: fix association attributes
 		
-		DaftarBuku daftarbuku = DaftarBukuFactory.createDaftarBuku("LibraryManagementSystem.daftarbuku.core.DaftarBukuImpl", judulBuku, penulis, penerbit, jumlahHalaman, deskripsiBuku, genre);
+		DaftarBuku daftarbuku = DaftarBukuFactory.createDaftarBuku("LibraryManagementSystem.daftarbuku.core.DaftarBukuImpl", judulBuku, penulis, penerbit, jumlahHalaman, deskripsiBuku, genre, statistikimpl);
 		return daftarbuku;
 	}
 

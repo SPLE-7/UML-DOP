@@ -1,6 +1,6 @@
-module LibraryManagementSystem.akun.core {
-	exports LibraryManagementSystem.akun;
-    exports LibraryManagementSystem.akun.core;
+module LibraryManagementSystem.statistik.core {
+	exports LibraryManagementSystem.statistik;
+    exports LibraryManagementSystem.statistik.core;
 	requires vmj.routing.route;
 	requires vmj.hibernate.integrator;
 	requires vmj.auth;
@@ -9,5 +9,5 @@ module LibraryManagementSystem.akun.core {
 	requires java.naming;
 	requires java.net.http;
 
-	opens LibraryManagementSystem.akun.core to org.hibernate.orm.core, gson, vmj.hibernate.integrator;
+	opens LibraryManagementSystem.statistik.core to org.hibernate.orm.core, gson, vmj.hibernate.integrator;
 }
