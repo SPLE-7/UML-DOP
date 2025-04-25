@@ -441,7 +441,7 @@
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uU_ZkiHEEfCVTpuhwdZlGw"/>
         </children>
         <element xmi:type="uml:Package" href="LibraryManagementSystemPapyrus.uml#_uUxXICHEEfCVTpuhwdZlGw"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uU-ygSHEEfCVTpuhwdZlGw" x="34" y="217" height="401"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uU-ygSHEEfCVTpuhwdZlGw" x="-6" y="217" height="401"/>
       </children>
       <children xmi:type="notation:Shape" xmi:id="_xUKgdiHEEfCVTpuhwdZlGw" type="StereotypeComment">
         <styles xmi:type="notation:TitleStyle" xmi:id="_xUKgdyHEEfCVTpuhwdZlGw"/>
@@ -761,7 +761,7 @@
     </children>
     <styles xmi:type="notation:FontStyle" xmi:id="_McupMSHFEfCVTpuhwdZlGw"/>
     <element xmi:type="uml:InterfaceRealization" href="LibraryManagementSystemPapyrus.uml#_McgmwCHFEfCVTpuhwdZlGw"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_McupMiHFEfCVTpuhwdZlGw" points="[-160, 540, -643984, -643984]$[-160, 487, -643984, -643984]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_McupMiHFEfCVTpuhwdZlGw" points="[-200, 540, -643984, -643984]$[-200, 487, -643984, -643984]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MdKuECHFEfCVTpuhwdZlGw" id="(0.46511627906976744,0.0)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MdKuESHFEfCVTpuhwdZlGw" id="(0.46,1.0)"/>
   </edges>
