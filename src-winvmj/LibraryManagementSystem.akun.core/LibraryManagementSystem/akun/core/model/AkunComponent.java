@@ -17,6 +17,8 @@ public abstract class AkunComponent implements Akun{
 	@Id
 	protected int idAkun; 
 	protected String nama;
+	@ManyToOne(targetEntity=LibraryManagementSystem.daftarbuku.core.DaftarBukuComponent.class)
+	public DaftarBuku daftarbukuimpl;
 	protected String objectName = AkunComponent.class.getName();
 
 	public AkunComponent() {
@@ -24,10 +26,11 @@ public abstract class AkunComponent implements Akun{
 	} 
 
 	public AkunComponent(
-        int idAkun, String nama
+        int idAkun, String nama, DaftarBukuImpl daftarbukuimpl
     ) {
         this.idAkun = idAkun;
         this.nama = nama;
+        this.daftarbukuimpl = daftarbukuimpl;
     }
 
 	public int getIdAkun() {
@@ -44,6 +47,9 @@ public abstract class AkunComponent implements Akun{
 	public void setNama(String nama) {
 		this.nama = nama;
 	}
+	public abstract DaftarBukuImpl getDaftarbukuimpl();
+	public abstract void setDaftarbukuimpl(DaftarBukuImpl daftarbukuimpl);
+	
  
 
 	@Override
@@ -51,6 +57,7 @@ public abstract class AkunComponent implements Akun{
         return "{" +
             " idAkun='" + getIdAkun() + "'" +
             " nama='" + getNama() + "'" +
+            " daftarbukuimpl='" + getDaftarbukuimpl() + "'" +
             "}";
     }
 	

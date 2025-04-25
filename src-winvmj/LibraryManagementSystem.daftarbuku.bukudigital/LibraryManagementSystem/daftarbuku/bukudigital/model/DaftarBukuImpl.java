@@ -16,6 +16,7 @@ import LibraryManagementSystem.daftarbuku.core.DaftarBukuComponent;
 @Table(name="daftarbuku_bukudigital")
 public class DaftarBukuImpl extends DaftarBukuDecorator {
 
+	protected String linkBuku;
 	public DaftarBukuImpl(
         super();
         this.objectName = DaftarBukuImpl.class.getName();
@@ -23,14 +24,23 @@ public class DaftarBukuImpl extends DaftarBukuDecorator {
     
     public DaftarBukuImpl(String linkBuku) {
     	super();
+		this.linkBuku = linkBuku;
 		this.objectName = DaftarBukuImpl.class.getName();
     }
 	
 	public DaftarBukuImpl(DaftarBukuComponent record, String linkBuku) {
 		super(record);
+		this.linkBuku = linkBuku;
 		this.objectName = DaftarBukuImpl.class.getName();
 	}
 
+	public String getLinkBuku() {
+		return this.linkBuku;
+	}
+
+	public void setLinkBuku(String linkBuku) {
+		this.linkBuku = linkBuku;
+	}
 
 
 }

@@ -1,4 +1,5 @@
 module LibraryManagementSystem.akun.core {
+	requires LibraryManagementSystem.daftarbuku.core;
 	exports LibraryManagementSystem.akun;
     exports LibraryManagementSystem.akun.core;
 	requires vmj.routing.route;

@@ -63,6 +63,10 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_9xy8QCG4EfCSL5sBBSYZEw" name="nama" visibility="protected" isUnique="false">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ymrjICHCEfCSL5sBBSYZEw" name="daftarbukuimpl" type="_1DXPYCCuEfCyTIMTUXcE5w" association="_ympt8CHCEfCSL5sBBSYZEw">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z7D8ICHCEfCSL5sBBSYZEw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z77e0CHCEfCSL5sBBSYZEw" value="*"/>
+          </ownedAttribute>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_BVLjcCG5EfCSL5sBBSYZEw" client="_1dlqYCG4EfCSL5sBBSYZEw" supplier="_za9rUCG4EfCSL5sBBSYZEw" contract="_za9rUCG4EfCSL5sBBSYZEw"/>
         </packagedElement>
       </packagedElement>
@@ -75,10 +79,6 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_m7Gb4CG5EfCSL5sBBSYZEw" name="akunimpl" type="_1dlqYCG4EfCSL5sBBSYZEw" association="_m7CKcCG5EfCSL5sBBSYZEw">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m7L7cCG5EfCSL5sBBSYZEw"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m7T3QCG5EfCSL5sBBSYZEw" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_038p4iG8EfCSL5sBBSYZEw" name="daftarbukuimpl" type="_1DXPYCCuEfCyTIMTUXcE5w" association="_038C0CG8EfCSL5sBBSYZEw">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_039Q8CG8EfCSL5sBBSYZEw"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_039Q8SG8EfCSL5sBBSYZEw" value="*"/>
           </ownedAttribute>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_dz5m0CG5EfCSL5sBBSYZEw" name="tambahBuku">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_hjDZICG5EfCSL5sBBSYZEw" name="x">
@@ -106,13 +106,13 @@
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_m7ak8CG5EfCSL5sBBSYZEw" name="akunimpl" type="_HMsJYCG5EfCSL5sBBSYZEw" association="_m7CKcCG5EfCSL5sBBSYZEw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_038C0CG8EfCSL5sBBSYZEw" memberEnd="_038p4iG8EfCSL5sBBSYZEw _039Q8iG8EfCSL5sBBSYZEw">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_038p4CG8EfCSL5sBBSYZEw" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_038p4SG8EfCSL5sBBSYZEw" key="nature" value="UML_Nature"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ympt8CHCEfCSL5sBBSYZEw" visibility="protected" memberEnd="_ymrjICHCEfCSL5sBBSYZEw _ymsKMCHCEfCSL5sBBSYZEw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ymq8ECHCEfCSL5sBBSYZEw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ymq8ESHCEfCSL5sBBSYZEw" key="nature" value="UML_Nature"/>
       </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_039Q8iG8EfCSL5sBBSYZEw" name="akunimpl" type="_HMsJYCG5EfCSL5sBBSYZEw" association="_038C0CG8EfCSL5sBBSYZEw">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_20-XQCG8EfCSL5sBBSYZEw"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_21MZsCG8EfCSL5sBBSYZEw" value="*"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ymsKMCHCEfCSL5sBBSYZEw" name="akunimpl" type="_1dlqYCG4EfCSL5sBBSYZEw" association="_ympt8CHCEfCSL5sBBSYZEw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0VEXkCHCEfCSL5sBBSYZEw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0V-9kCHCEfCSL5sBBSYZEw" value="*"/>
       </ownedEnd>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UVNBoCBiEfC-B6xQo0cSXw">
@@ -143,5 +143,6 @@
   <umlvmprofile:adds xmi:id="_fXZZ4CG5EfCSL5sBBSYZEw" base_Operation="_dz5m0CG5EfCSL5sBBSYZEw"/>
   <umlvmprofile:modifies xmi:id="_pkdDwCG5EfCSL5sBBSYZEw" base_Association="_m7CKcCG5EfCSL5sBBSYZEw"/>
   <umlvmprofile:modifiedClass xmi:id="_xvNesCG5EfCSL5sBBSYZEw" base_Class="_HMsJYCG5EfCSL5sBBSYZEw"/>
-  <umlvmprofile:adds xmi:id="_O2MUkCG9EfCSL5sBBSYZEw" base_Association="_038C0CG8EfCSL5sBBSYZEw"/>
+  <umlvmprofile:adds xmi:id="_RmqCUCHDEfCSL5sBBSYZEw" base_Property="_OYi_4CC4EfCyTIMTUXcE5w"/>
+  <umlvmprofile:adds xmi:id="_SXnlMCHDEfCSL5sBBSYZEw" base_Property="_FbJAACC4EfCyTIMTUXcE5w"/>
 </xmi:XMI>

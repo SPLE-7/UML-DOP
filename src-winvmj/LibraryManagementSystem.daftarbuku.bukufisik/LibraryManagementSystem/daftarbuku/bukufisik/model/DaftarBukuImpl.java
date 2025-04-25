@@ -16,6 +16,7 @@ import LibraryManagementSystem.daftarbuku.core.DaftarBukuComponent;
 @Table(name="daftarbuku_bukufisik")
 public class DaftarBukuImpl extends DaftarBukuDecorator {
 
+	protected int jumlahBuku;
 	public DaftarBukuImpl(
         super();
         this.objectName = DaftarBukuImpl.class.getName();
@@ -23,14 +24,23 @@ public class DaftarBukuImpl extends DaftarBukuDecorator {
     
     public DaftarBukuImpl(int jumlahBuku) {
     	super();
+		this.jumlahBuku = jumlahBuku;
 		this.objectName = DaftarBukuImpl.class.getName();
     }
 	
 	public DaftarBukuImpl(DaftarBukuComponent record, int jumlahBuku) {
 		super(record);
+		this.jumlahBuku = jumlahBuku;
 		this.objectName = DaftarBukuImpl.class.getName();
 	}
 
+	public int getJumlahBuku() {
+		return this.jumlahBuku;
+	}
+
+	public void setJumlahBuku(int jumlahBuku) {
+		this.jumlahBuku = jumlahBuku;
+	}
 
 
 }

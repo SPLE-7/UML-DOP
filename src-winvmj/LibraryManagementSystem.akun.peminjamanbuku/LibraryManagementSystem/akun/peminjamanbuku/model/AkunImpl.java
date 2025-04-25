@@ -22,13 +22,13 @@ public class AkunImpl extends AkunDecorator {
         this.objectName = AkunImpl.class.getName();
     }
     
-    public AkunImpl(int jumlahBukuPinjaman, DaftarBukuImpl daftarbukuimpl) {
+    public AkunImpl(int jumlahBukuPinjaman) {
     	super();
 		this.jumlahBukuPinjaman = jumlahBukuPinjaman;
 		this.objectName = AkunImpl.class.getName();
     }
 	
-	public AkunImpl(AkunComponent record, int jumlahBukuPinjaman, DaftarBukuImpl daftarbukuimpl) {
+	public AkunImpl(AkunComponent record, int jumlahBukuPinjaman) {
 		super(record);
 		this.jumlahBukuPinjaman = jumlahBukuPinjaman;
 		this.objectName = AkunImpl.class.getName();

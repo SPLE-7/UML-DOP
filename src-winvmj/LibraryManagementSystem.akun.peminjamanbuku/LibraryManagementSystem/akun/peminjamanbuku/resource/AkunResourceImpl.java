@@ -29,7 +29,7 @@ public class AkunResourceImpl extends AkunResourceDecorator {
 		int jumlahBukuPinjaman = Integer.parseInt(jumlahBukuPinjamanStr);
 		
 		  = record.create(vmjExchange);
-		 deco = Factory.create("LibraryManagementSystem.peminjamanbuku.core.AkunImpl", , jumlahBukuPinjaman, daftarbukuimpl);
+		 deco = Factory.create("LibraryManagementSystem.peminjamanbuku.core.AkunImpl", , jumlahBukuPinjaman);
 			return deco;
 	}
 
@@ -40,7 +40,7 @@ public class AkunResourceImpl extends AkunResourceDecorator {
 		int recordId = (((Decorator) saved.getRecord()).getId();
 		
 		  = record.create(vmjExchange);
-		 deco = Factory.create("LibraryManagementSystem.peminjamanbuku.core.AkunImpl", id, , jumlahBukuPinjaman, daftarbukuimpl);
+		 deco = Factory.create("LibraryManagementSystem.peminjamanbuku.core.AkunImpl", id, , jumlahBukuPinjaman);
 			return deco;
 	}
 
