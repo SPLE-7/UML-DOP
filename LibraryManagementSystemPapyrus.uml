@@ -29,6 +29,7 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_tHnPQCD6EfCyTIMTUXcE5w" name="genre" visibility="protected" isUnique="false">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_KXeFgCHIEfCVTpuhwdZlGw" name="statistikimpl" type="_FwvSUCHFEfCVTpuhwdZlGw" association="_KXc3YCHIEfCVTpuhwdZlGw"/>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_9cPl4CCuEfCyTIMTUXcE5w" client="_1DXPYCCuEfCyTIMTUXcE5w" supplier="_weKl4CCuEfCyTIMTUXcE5w" contract="_weKl4CCuEfCyTIMTUXcE5w"/>
         </packagedElement>
       </packagedElement>
@@ -120,6 +121,15 @@
       <ownedEnd xmi:type="uml:Property" xmi:id="_ymsKMCHCEfCSL5sBBSYZEw" name="akunimpl" type="_1dlqYCG4EfCSL5sBBSYZEw" association="_ympt8CHCEfCSL5sBBSYZEw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0VEXkCHCEfCSL5sBBSYZEw"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0V-9kCHCEfCSL5sBBSYZEw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KXc3YCHIEfCVTpuhwdZlGw" memberEnd="_KXeFgCHIEfCVTpuhwdZlGw _KXeFgyHIEfCVTpuhwdZlGw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KXdecCHIEfCVTpuhwdZlGw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KXdecSHIEfCVTpuhwdZlGw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_KXeFgyHIEfCVTpuhwdZlGw" name="daftarbukuimpl" type="_1DXPYCCuEfCyTIMTUXcE5w" association="_KXc3YCHIEfCVTpuhwdZlGw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OARYMCHIEfCVTpuhwdZlGw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OAzjsCHIEfCVTpuhwdZlGw" value="*"/>
       </ownedEnd>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UVNBoCBiEfC-B6xQo0cSXw">
