@@ -19,27 +19,31 @@ import javax.persistence.OneToMany;
 @Table(name="peminjamanbuku_impl")
 public class PeminjamanBukuImpl extends PeminjamanBukuComponent {
 
-	public PeminjamanBukuImpl(int idPeminjamanBuku, String status, AkunImpl akunimpl, DaftarBukuImpl daftarbukuimpl) {
+	public PeminjamanBukuImpl(UUID idPeminjamanBuku, String status, AkunImpl akunimpl, DaftarBukuImpl daftarbukuimpl, EDate tanggalPeminjaman, EDate tanggalPengembalian) {
 		this.idPeminjamanBuku = idPeminjamanBuku;
 		this.status = status;
 		this.akunimpl = akunimpl;
 		this.daftarbukuimpl = daftarbukuimpl;
+		this.tanggalPeminjaman = tanggalPeminjaman;
+		this.tanggalPengembalian = tanggalPengembalian;
 	}
 
-	public PeminjamanBukuImpl(String status, AkunImpl akunimpl, DaftarBukuImpl daftarbukuimpl) {
+	public PeminjamanBukuImpl(String status, AkunImpl akunimpl, DaftarBukuImpl daftarbukuimpl, EDate tanggalPeminjaman, EDate tanggalPengembalian) {
 		this.idPeminjamanBuku =  idPeminjamanBuku.randomUUID();;
 		this.status = status;
 		this.akunimpl = akunimpl;
 		this.daftarbukuimpl = daftarbukuimpl;
+		this.tanggalPeminjaman = tanggalPeminjaman;
+		this.tanggalPengembalian = tanggalPengembalian;
 	}
 
 	public PeminjamanBukuImpl() { }
 
-	public int getIdPeminjamanBuku() {
+	public UUID getIdPeminjamanBuku() {
 		return this.idPeminjamanBuku;
 	}
 
-	public void setIdPeminjamanBuku(int idPeminjamanBuku) {
+	public void setIdPeminjamanBuku(UUID idPeminjamanBuku) {
 		this.idPeminjamanBuku = idPeminjamanBuku;
 	}
 	public String getStatus() {
@@ -49,6 +53,20 @@ public class PeminjamanBukuImpl extends PeminjamanBukuComponent {
 	public void setStatus(String status) {
 		this.status = status;
 	}
+	public EDate getTanggalPeminjaman() {
+		return this.tanggalPeminjaman;
+	}
+
+	public void setTanggalPeminjaman(EDate tanggalPeminjaman) {
+		this.tanggalPeminjaman = tanggalPeminjaman;
+	}
+	public EDate getTanggalPengembalian() {
+		return this.tanggalPengembalian;
+	}
+
+	public void setTanggalPengembalian(EDate tanggalPengembalian) {
+		this.tanggalPengembalian = tanggalPengembalian;
+	}
 
 	
 	public HashMap<String, Object> toHashMap() {
@@ -57,6 +75,8 @@ public class PeminjamanBukuImpl extends PeminjamanBukuComponent {
 		peminjamanbukuMap.put("status",getStatus());
 		peminjamanbukuMap.put("akunimpl",getAkunimpl());
 		peminjamanbukuMap.put("daftarbukuimpl",getDaftarbukuimpl());
+		peminjamanbukuMap.put("tanggalPeminjaman",getTanggalPeminjaman());
+		peminjamanbukuMap.put("tanggalPengembalian",getTanggalPengembalian());
 
         return peminjamanbukuMap;
     }

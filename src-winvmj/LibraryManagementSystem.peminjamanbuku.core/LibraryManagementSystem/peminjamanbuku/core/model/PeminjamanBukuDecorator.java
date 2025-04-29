@@ -24,7 +24,7 @@ public abstract class PeminjamanBukuDecorator extends PeminjamanBukuComponent{
 		this.record = record;
 	}
 
-	public PeminjamanBukuDecorator (int idPeminjamanBuku, PeminjamanBukuComponent record) {
+	public PeminjamanBukuDecorator (UUID idPeminjamanBuku, PeminjamanBukuComponent record) {
 		this.idPeminjamanBuku =  idPeminjamanBuku;
 		this.record = record;
 	}
@@ -37,10 +37,10 @@ public abstract class PeminjamanBukuDecorator extends PeminjamanBukuComponent{
 
 	public PeminjamanBukuDecorator() { }
 
-	public int getIdPeminjamanBuku() {
+	public UUID getIdPeminjamanBuku() {
 		return record.getIdPeminjamanBuku();
 	}
-	public void setIdPeminjamanBuku(int idPeminjamanBuku) {
+	public void setIdPeminjamanBuku(UUID idPeminjamanBuku) {
 		record.setIdPeminjamanBuku(idPeminjamanBuku);
 	}
 	public String getStatus() {
@@ -48,6 +48,18 @@ public abstract class PeminjamanBukuDecorator extends PeminjamanBukuComponent{
 	}
 	public void setStatus(String status) {
 		record.setStatus(status);
+	}
+	public EDate getTanggalPeminjaman() {
+		return record.getTanggalPeminjaman();
+	}
+	public void setTanggalPeminjaman(EDate tanggalPeminjaman) {
+		record.setTanggalPeminjaman(tanggalPeminjaman);
+	}
+	public EDate getTanggalPengembalian() {
+		return record.getTanggalPengembalian();
+	}
+	public void setTanggalPengembalian(EDate tanggalPengembalian) {
+		record.setTanggalPengembalian(tanggalPengembalian);
 	}
 
 

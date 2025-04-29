@@ -24,7 +24,7 @@ public abstract class DaftarBukuDecorator extends DaftarBukuComponent{
 		this.record = record;
 	}
 
-	public DaftarBukuDecorator (int idBuku, DaftarBukuComponent record) {
+	public DaftarBukuDecorator (UUID idBuku, DaftarBukuComponent record) {
 		this.idBuku =  idBuku;
 		this.record = record;
 	}
@@ -37,10 +37,10 @@ public abstract class DaftarBukuDecorator extends DaftarBukuComponent{
 
 	public DaftarBukuDecorator() { }
 
-	public int getIdBuku() {
+	public UUID getIdBuku() {
 		return record.getIdBuku();
 	}
-	public void setIdBuku(int idBuku) {
+	public void setIdBuku(UUID idBuku) {
 		record.setIdBuku(idBuku);
 	}
 	public String getJudulBuku() {

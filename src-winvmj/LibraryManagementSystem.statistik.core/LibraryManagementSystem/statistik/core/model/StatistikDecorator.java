@@ -37,15 +37,9 @@ public abstract class StatistikDecorator extends StatistikComponent{
 
 	public StatistikDecorator() { }
 
-	public String getNamaChart() {
-		return record.getNamaChart();
-	}
-	public void setNamaChart(String namaChart) {
-		record.setNamaChart(namaChart);
-	}
 
-	protected void hitungJumlahBuku() {
-		return record.hitungJumlahBuku();
+	public int hitungTotalBuku() {
+		return record.hitungTotalBuku();
 	}
 
 	public HashMap<String, Object> toHashMap() {

@@ -19,7 +19,7 @@ import javax.persistence.OneToMany;
 @Table(name="akun_impl")
 public class AkunImpl extends AkunComponent {
 
-	public AkunImpl(int idAkun, String nama) {
+	public AkunImpl(UUID idAkun, String nama) {
 		this.idAkun = idAkun;
 		this.nama = nama;
 	}
@@ -31,11 +31,11 @@ public class AkunImpl extends AkunComponent {
 
 	public AkunImpl() { }
 
-	public int getIdAkun() {
+	public UUID getIdAkun() {
 		return this.idAkun;
 	}
 
-	public void setIdAkun(int idAkun) {
+	public void setIdAkun(UUID idAkun) {
 		this.idAkun = idAkun;
 	}
 	public String getNama() {

@@ -4,8 +4,8 @@ import vmj.routing.route.VMJExchange;
 import java.util.*;
 
 public interface DaftarBuku {
-	public int getIdBuku();
-	public void setIdBuku(int idBuku);
+	public UUID getIdBuku();
+	public void setIdBuku(UUID idBuku);
 	public String getJudulBuku();
 	public void setJudulBuku(String judulBuku);
 	public String getPenulis();
@@ -18,7 +18,5 @@ public interface DaftarBuku {
 	public void setDeskripsiBuku(String deskripsiBuku);
 	public String getGenre();
 	public void setGenre(String genre);
-	public StatistikImpl getStatistikimpl();
-	public void setStatistikimpl(StatistikImpl statistikimpl);
 	HashMap<String, Object> toHashMap();
 }

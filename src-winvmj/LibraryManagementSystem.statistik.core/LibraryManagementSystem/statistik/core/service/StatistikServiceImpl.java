@@ -30,28 +30,21 @@ public class StatistikServiceImpl extends StatistikServiceComponent{
 	}
 
     public Statistik createStatistik(Map<String, Object> requestBody){
-		String jumlahBukuStatistikStr = (String) requestBody.get("jumlahBukuStatistik");
-		int jumlahBukuStatistik = Integer.parseInt(jumlahBukuStatistikStr);
-		String namaChart = (String) requestBody.get("namaChart");
 		
 		//to do: fix association attributes
 		Statistik Statistik = StatistikFactory.createStatistik(
 			"LibraryManagementSystem.statistik.core.StatistikImpl",
-		jumlahBukuStatistik
-		, namaChart
+		daftarbukuimpl
 		);
 		Repository.saveObject(statistik);
 		return statistik;
 	}
 
     public Statistik createStatistik(Map<String, Object> requestBody, int id){
-		String jumlahBukuStatistikStr = (String) vmjExchange.getRequestBodyForm("jumlahBukuStatistik");
-		int jumlahBukuStatistik = Integer.parseInt(jumlahBukuStatistikStr);
-		String namaChart = (String) vmjExchange.getRequestBodyForm("namaChart");
 		
 		//to do: fix association attributes
 		
-		Statistik statistik = StatistikFactory.createStatistik("LibraryManagementSystem.statistik.core.StatistikImpl", jumlahBukuStatistik, namaChart);
+		Statistik statistik = StatistikFactory.createStatistik("LibraryManagementSystem.statistik.core.StatistikImpl", daftarbukuimpl);
 		return statistik;
 	}
 
@@ -60,9 +53,6 @@ public class StatistikServiceImpl extends StatistikServiceComponent{
 		int id = Integer.parseInt(idStr);
 		Statistik statistik = Repository.getObject(id);
 		
-		String jumlahBukuStatistikStr = (String) requestBody.get("jumlahBukuStatistik");
-		statistik.setJumlahBukuStatistik(Integer.parseInt(jumlahBukuStatistikStr));
-		statistik.setNamaChart((String) requestBody.get("namaChart"));
 		
 		Repository.updateObject(statistik);
 		
@@ -112,7 +102,7 @@ public class StatistikServiceImpl extends StatistikServiceComponent{
 		return getAllStatistik(requestBody);
 	}
 
-	protected void hitungJumlahBuku() {
+	public int hitungTotalBuku() {
 		// TODO: implement this method
 	}
 }

@@ -46,7 +46,7 @@ public abstract class StatistikServiceDecorator extends StatistikServiceComponen
         return record.getStatistikById(id);
     }
 
-	protected void hitungJumlahBuku() {
-		return record.hitungJumlahBuku();
+	public int hitungTotalBuku() {
+		return record.hitungTotalBuku();
 	}
 }

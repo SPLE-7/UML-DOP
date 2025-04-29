@@ -15,7 +15,7 @@ import javax.persistence.Table;
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class AkunComponent implements Akun{
 	@Id
-	protected int idAkun; 
+	protected UUID idAkun; 
 	protected String nama;
 	protected String objectName = AkunComponent.class.getName();
 
@@ -24,17 +24,17 @@ public abstract class AkunComponent implements Akun{
 	} 
 
 	public AkunComponent(
-        int idAkun, String nama
+        UUID idAkun, String nama
     ) {
         this.idAkun = idAkun;
         this.nama = nama;
     }
 
-	public int getIdAkun() {
+	public UUID getIdAkun() {
 		return this.idAkun;
 	}
 
-	public void setIdAkun(int idAkun) {
+	public void setIdAkun(UUID idAkun) {
 		this.idAkun = idAkun;
 	}
 	public String getNama() {

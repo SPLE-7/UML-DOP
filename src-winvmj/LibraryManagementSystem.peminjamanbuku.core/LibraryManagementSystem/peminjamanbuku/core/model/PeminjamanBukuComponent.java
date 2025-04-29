@@ -15,12 +15,14 @@ import javax.persistence.Table;
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class PeminjamanBukuComponent implements PeminjamanBuku{
 	@Id
-	protected int idPeminjamanBuku; 
+	protected UUID idPeminjamanBuku; 
 	protected String status;
 	@ManyToOne(targetEntity=LibraryManagementSystem.akun.core.AkunComponent.class)
 	public Akun akunimpl;
 	@ManyToOne(targetEntity=LibraryManagementSystem.daftarbuku.core.DaftarBukuComponent.class)
 	public DaftarBuku daftarbukuimpl;
+	protected EDate tanggalPeminjaman;
+	protected EDate tanggalPengembalian;
 	protected String objectName = PeminjamanBukuComponent.class.getName();
 
 	public PeminjamanBukuComponent() {
@@ -28,19 +30,21 @@ public abstract class PeminjamanBukuComponent implements PeminjamanBuku{
 	} 
 
 	public PeminjamanBukuComponent(
-        int idPeminjamanBuku, String status, AkunImpl akunimpl, DaftarBukuImpl daftarbukuimpl
+        UUID idPeminjamanBuku, String status, AkunImpl akunimpl, DaftarBukuImpl daftarbukuimpl, EDate tanggalPeminjaman, EDate tanggalPengembalian
     ) {
         this.idPeminjamanBuku = idPeminjamanBuku;
         this.status = status;
         this.akunimpl = akunimpl;
         this.daftarbukuimpl = daftarbukuimpl;
+        this.tanggalPeminjaman = tanggalPeminjaman;
+        this.tanggalPengembalian = tanggalPengembalian;
     }
 
-	public int getIdPeminjamanBuku() {
+	public UUID getIdPeminjamanBuku() {
 		return this.idPeminjamanBuku;
 	}
 
-	public void setIdPeminjamanBuku(int idPeminjamanBuku) {
+	public void setIdPeminjamanBuku(UUID idPeminjamanBuku) {
 		this.idPeminjamanBuku = idPeminjamanBuku;
 	}
 	public String getStatus() {
@@ -56,6 +60,20 @@ public abstract class PeminjamanBukuComponent implements PeminjamanBuku{
 	public abstract DaftarBukuImpl getDaftarbukuimpl();
 	public abstract void setDaftarbukuimpl(DaftarBukuImpl daftarbukuimpl);
 	
+	public EDate getTanggalPeminjaman() {
+		return this.tanggalPeminjaman;
+	}
+
+	public void setTanggalPeminjaman(EDate tanggalPeminjaman) {
+		this.tanggalPeminjaman = tanggalPeminjaman;
+	}
+	public EDate getTanggalPengembalian() {
+		return this.tanggalPengembalian;
+	}
+
+	public void setTanggalPengembalian(EDate tanggalPengembalian) {
+		this.tanggalPengembalian = tanggalPengembalian;
+	}
  
 
 	@Override
@@ -65,6 +83,8 @@ public abstract class PeminjamanBukuComponent implements PeminjamanBuku{
             " status='" + getStatus() + "'" +
             " akunimpl='" + getAkunimpl() + "'" +
             " daftarbukuimpl='" + getDaftarbukuimpl() + "'" +
+            " tanggalPeminjaman='" + getTanggalPeminjaman() + "'" +
+            " tanggalPengembalian='" + getTanggalPengembalian() + "'" +
             "}";
     }
 	

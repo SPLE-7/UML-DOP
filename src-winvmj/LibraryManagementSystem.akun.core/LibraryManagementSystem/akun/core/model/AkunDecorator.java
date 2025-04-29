@@ -24,7 +24,7 @@ public abstract class AkunDecorator extends AkunComponent{
 		this.record = record;
 	}
 
-	public AkunDecorator (int idAkun, AkunComponent record) {
+	public AkunDecorator (UUID idAkun, AkunComponent record) {
 		this.idAkun =  idAkun;
 		this.record = record;
 	}
@@ -37,10 +37,10 @@ public abstract class AkunDecorator extends AkunComponent{
 
 	public AkunDecorator() { }
 
-	public int getIdAkun() {
+	public UUID getIdAkun() {
 		return record.getIdAkun();
 	}
-	public void setIdAkun(int idAkun) {
+	public void setIdAkun(UUID idAkun) {
 		record.setIdAkun(idAkun);
 	}
 	public String getNama() {

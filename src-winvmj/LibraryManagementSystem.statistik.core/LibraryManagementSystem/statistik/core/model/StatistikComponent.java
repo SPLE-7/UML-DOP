@@ -16,8 +16,8 @@ import javax.persistence.Table;
 public abstract class StatistikComponent implements Statistik{
 	@Id
 	
-	package int jumlahBukuStatistik;
-	protected String namaChart;
+	@ManyToOne(targetEntity=LibraryManagementSystem.daftarbuku.core.DaftarBukuComponent.class)
+	public DaftarBuku daftarbukuimpl;
 	protected String objectName = StatistikComponent.class.getName();
 
 	public StatistikComponent() {
@@ -25,30 +25,21 @@ public abstract class StatistikComponent implements Statistik{
 	} 
 
 	public StatistikComponent(
-        int jumlahBukuStatistik, String namaChart
+        DaftarBukuImpl daftarbukuimpl
     ) {
-        this.jumlahBukuStatistik = jumlahBukuStatistik;
-        this.namaChart = namaChart;
+        this.daftarbukuimpl = daftarbukuimpl;
     }
 
-	public abstract int getJumlahBukuStatistik();
-	public abstract void setJumlahBukuStatistik(int jumlahBukuStatistik);
+	public abstract DaftarBukuImpl getDaftarbukuimpl();
+	public abstract void setDaftarbukuimpl(DaftarBukuImpl daftarbukuimpl);
 	
-	public String getNamaChart() {
-		return this.namaChart;
-	}
-
-	public void setNamaChart(String namaChart) {
-		this.namaChart = namaChart;
-	}
  
-	protected abstract void hitungJumlahBuku();
+	public abstract int hitungTotalBuku();
 
 	@Override
     public String toString() {
         return "{" +
-            " jumlahBukuStatistik='" + getJumlahBukuStatistik() + "'" +
-            " namaChart='" + getNamaChart() + "'" +
+            " daftarbukuimpl='" + getDaftarbukuimpl() + "'" +
             "}";
     }
 	

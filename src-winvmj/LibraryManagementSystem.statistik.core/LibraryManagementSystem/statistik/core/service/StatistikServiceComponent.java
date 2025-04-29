@@ -22,5 +22,5 @@ public abstract class StatistikServiceComponent implements StatistikService{
     public abstract List<HashMap<String,Object>> deleteStatistik(Map<String, Object> requestBody);
 	public abstract HashMap<String, Object> getStatistikById(int id);
 
-	protected abstract void hitungJumlahBuku();
+	public abstract int hitungTotalBuku();
 }

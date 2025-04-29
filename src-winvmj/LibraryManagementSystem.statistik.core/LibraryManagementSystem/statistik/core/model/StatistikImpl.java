@@ -19,35 +19,25 @@ import javax.persistence.OneToMany;
 @Table(name="statistik_impl")
 public class StatistikImpl extends StatistikComponent {
 
-	public StatistikImpl(int jumlahBukuStatistik, String namaChart) {
-		this.jumlahBukuStatistik = jumlahBukuStatistik;
-		this.namaChart = namaChart;
+	public StatistikImpl(DaftarBukuImpl daftarbukuimpl) {
+		this.daftarbukuimpl = daftarbukuimpl;
 	}
 
-	public StatistikImpl(int jumlahBukuStatistik, String namaChart) {
+	public StatistikImpl(DaftarBukuImpl daftarbukuimpl) {
 		this. =  .randomUUID();;
-		this.jumlahBukuStatistik = jumlahBukuStatistik;
-		this.namaChart = namaChart;
+		this.daftarbukuimpl = daftarbukuimpl;
 	}
 
 	public StatistikImpl() { }
 
-	public String getNamaChart() {
-		return this.namaChart;
-	}
 
-	public void setNamaChart(String namaChart) {
-		this.namaChart = namaChart;
-	}
-
-	protected void hitungJumlahBuku() {
+	public int hitungTotalBuku() {
 		// TODO: implement this method
 	}
 	
 	public HashMap<String, Object> toHashMap() {
         HashMap<String, Object> statistikMap = new HashMap<String,Object>();
-		statistikMap.put("jumlahBukuStatistik",getJumlahBukuStatistik());
-		statistikMap.put("namaChart",getNamaChart());
+		statistikMap.put("daftarbukuimpl",getDaftarbukuimpl());
 
         return statistikMap;
     }

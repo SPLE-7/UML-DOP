@@ -60,7 +60,7 @@ public class StatistikResourceImpl extends StatistikResourceComponent{
 		return statistikServiceImpl.deleteStatistik(requestBody);
 	}
 
-	protected void hitungJumlahBuku() {
+	public int hitungTotalBuku() {
 		// TODO: implement this method
 	}
 }

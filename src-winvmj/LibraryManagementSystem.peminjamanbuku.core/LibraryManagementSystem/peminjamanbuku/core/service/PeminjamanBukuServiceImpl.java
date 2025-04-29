@@ -30,8 +30,6 @@ public class PeminjamanBukuServiceImpl extends PeminjamanBukuServiceComponent{
 	}
 
     public PeminjamanBuku createPeminjamanBuku(Map<String, Object> requestBody){
-		String idPeminjamanBukuStr = (String) requestBody.get("idPeminjamanBuku");
-		int idPeminjamanBuku = Integer.parseInt(idPeminjamanBukuStr);
 		String status = (String) requestBody.get("status");
 		
 		//to do: fix association attributes
@@ -41,6 +39,8 @@ public class PeminjamanBukuServiceImpl extends PeminjamanBukuServiceComponent{
 		, status
 		, akunimpl
 		, daftarbukuimpl
+		, tanggalPeminjaman
+		, tanggalPengembalian
 		);
 		Repository.saveObject(peminjamanbuku);
 		return peminjamanbuku;
@@ -51,7 +51,7 @@ public class PeminjamanBukuServiceImpl extends PeminjamanBukuServiceComponent{
 		
 		//to do: fix association attributes
 		
-		PeminjamanBuku peminjamanbuku = PeminjamanBukuFactory.createPeminjamanBuku("LibraryManagementSystem.peminjamanbuku.core.PeminjamanBukuImpl", status, akunimpl, daftarbukuimpl);
+		PeminjamanBuku peminjamanbuku = PeminjamanBukuFactory.createPeminjamanBuku("LibraryManagementSystem.peminjamanbuku.core.PeminjamanBukuImpl", status, akunimpl, daftarbukuimpl, tanggalPeminjaman, tanggalPengembalian);
 		return peminjamanbuku;
 	}
 

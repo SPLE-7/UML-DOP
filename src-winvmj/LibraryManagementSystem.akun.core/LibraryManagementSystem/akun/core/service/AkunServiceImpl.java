@@ -30,8 +30,6 @@ public class AkunServiceImpl extends AkunServiceComponent{
 	}
 
     public Akun createAkun(Map<String, Object> requestBody){
-		String idAkunStr = (String) requestBody.get("idAkun");
-		int idAkun = Integer.parseInt(idAkunStr);
 		String nama = (String) requestBody.get("nama");
 		
 		//to do: fix association attributes

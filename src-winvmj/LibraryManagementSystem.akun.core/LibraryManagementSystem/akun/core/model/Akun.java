@@ -4,8 +4,8 @@ import vmj.routing.route.VMJExchange;
 import java.util.*;
 
 public interface Akun {
-	public int getIdAkun();
-	public void setIdAkun(int idAkun);
+	public UUID getIdAkun();
+	public void setIdAkun(UUID idAkun);
 	public String getNama();
 	public void setNama(String nama);
 	HashMap<String, Object> toHashMap();

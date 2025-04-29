@@ -31,7 +31,7 @@ public abstract class StatistikResourceDecorator extends StatistikResourceCompon
 		return record.deleteStatistik(vmjExchange);
 	}
 
-	protected void hitungJumlahBuku() {
-		return record.hitungJumlahBuku();
+	public int hitungTotalBuku() {
+		return record.hitungTotalBuku();
 	}
 }
