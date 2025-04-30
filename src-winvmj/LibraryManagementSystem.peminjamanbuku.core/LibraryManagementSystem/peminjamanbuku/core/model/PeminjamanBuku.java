@@ -12,9 +12,9 @@ public interface PeminjamanBuku {
 	public void setAkunimpl(AkunImpl akunimpl);
 	public DaftarBukuImpl getDaftarbukuimpl();
 	public void setDaftarbukuimpl(DaftarBukuImpl daftarbukuimpl);
-	public EDate getTanggalPeminjaman();
-	public void setTanggalPeminjaman(EDate tanggalPeminjaman);
-	public EDate getTanggalPengembalian();
-	public void setTanggalPengembalian(EDate tanggalPengembalian);
+	public Date getTanggalPeminjaman();
+	public void setTanggalPeminjaman(Date tanggalPeminjaman);
+	public Date getTanggalPengembalian();
+	public void setTanggalPengembalian(Date tanggalPengembalian);
 	HashMap<String, Object> toHashMap();
 }

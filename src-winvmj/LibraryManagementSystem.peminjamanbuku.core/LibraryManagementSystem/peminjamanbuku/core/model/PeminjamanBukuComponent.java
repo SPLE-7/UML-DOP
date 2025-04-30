@@ -21,8 +21,8 @@ public abstract class PeminjamanBukuComponent implements PeminjamanBuku{
 	public Akun akunimpl;
 	@ManyToOne(targetEntity=LibraryManagementSystem.daftarbuku.core.DaftarBukuComponent.class)
 	public DaftarBuku daftarbukuimpl;
-	protected EDate tanggalPeminjaman;
-	protected EDate tanggalPengembalian;
+	protected Date tanggalPeminjaman;
+	protected Date tanggalPengembalian;
 	protected String objectName = PeminjamanBukuComponent.class.getName();
 
 	public PeminjamanBukuComponent() {
@@ -30,7 +30,7 @@ public abstract class PeminjamanBukuComponent implements PeminjamanBuku{
 	} 
 
 	public PeminjamanBukuComponent(
-        UUID idPeminjamanBuku, String status, AkunImpl akunimpl, DaftarBukuImpl daftarbukuimpl, EDate tanggalPeminjaman, EDate tanggalPengembalian
+        UUID idPeminjamanBuku, String status, AkunImpl akunimpl, DaftarBukuImpl daftarbukuimpl, Date tanggalPeminjaman, Date tanggalPengembalian
     ) {
         this.idPeminjamanBuku = idPeminjamanBuku;
         this.status = status;
@@ -60,18 +60,18 @@ public abstract class PeminjamanBukuComponent implements PeminjamanBuku{
 	public abstract DaftarBukuImpl getDaftarbukuimpl();
 	public abstract void setDaftarbukuimpl(DaftarBukuImpl daftarbukuimpl);
 	
-	public EDate getTanggalPeminjaman() {
+	public Date getTanggalPeminjaman() {
 		return this.tanggalPeminjaman;
 	}
 
-	public void setTanggalPeminjaman(EDate tanggalPeminjaman) {
+	public void setTanggalPeminjaman(Date tanggalPeminjaman) {
 		this.tanggalPeminjaman = tanggalPeminjaman;
 	}
-	public EDate getTanggalPengembalian() {
+	public Date getTanggalPengembalian() {
 		return this.tanggalPengembalian;
 	}
 
-	public void setTanggalPengembalian(EDate tanggalPengembalian) {
+	public void setTanggalPengembalian(Date tanggalPengembalian) {
 		this.tanggalPengembalian = tanggalPengembalian;
 	}
  

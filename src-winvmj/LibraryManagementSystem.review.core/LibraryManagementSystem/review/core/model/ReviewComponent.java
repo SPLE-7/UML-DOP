@@ -16,7 +16,7 @@ import javax.persistence.Table;
 public abstract class ReviewComponent implements Review{
 	@Id
 	protected UUID idReview; 
-	protected EDate postedAt;
+	protected Date postedAt;
 	@ManyToOne(targetEntity=LibraryManagementSystem.daftarbuku.core.DaftarBukuComponent.class)
 	public DaftarBuku daftarbukuimpl;
 	protected String objectName = ReviewComponent.class.getName();
@@ -26,7 +26,7 @@ public abstract class ReviewComponent implements Review{
 	} 
 
 	public ReviewComponent(
-        UUID idReview, EDate postedAt, DaftarBukuImpl daftarbukuimpl
+        UUID idReview, Date postedAt, DaftarBukuImpl daftarbukuimpl
     ) {
         this.idReview = idReview;
         this.postedAt = postedAt;
@@ -40,11 +40,11 @@ public abstract class ReviewComponent implements Review{
 	public void setIdReview(UUID idReview) {
 		this.idReview = idReview;
 	}
-	public EDate getPostedAt() {
+	public Date getPostedAt() {
 		return this.postedAt;
 	}
 
-	public void setPostedAt(EDate postedAt) {
+	public void setPostedAt(Date postedAt) {
 		this.postedAt = postedAt;
 	}
 	public abstract DaftarBukuImpl getDaftarbukuimpl();

@@ -8,7 +8,7 @@ public interface Recommendation {
 	public void setDaftarbukuimpl(DaftarBukuImpl daftarbukuimpl);
 	public AkunImpl getAkunimpl();
 	public void setAkunimpl(AkunImpl akunimpl);
-	public WishlistServiceImpl getWishlistserviceimpl();
-	public void setWishlistserviceimpl(WishlistServiceImpl wishlistserviceimpl);
+	public WishlistImpl getWishlistserviceimpl();
+	public void setWishlistserviceimpl(WishlistImpl wishlistserviceimpl);
 	HashMap<String, Object> toHashMap();
 }

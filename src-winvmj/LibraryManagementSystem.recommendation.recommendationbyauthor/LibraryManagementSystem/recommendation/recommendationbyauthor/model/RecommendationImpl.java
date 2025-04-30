@@ -32,7 +32,7 @@ public class RecommendationImpl extends RecommendationDecorator {
 	}
 
 
-	public EEList generateRecommendationAuthor() {
+	public List<DaftarBuku> generateRecommendationAuthor() {
 		// TODO: implement this method
 	}
 

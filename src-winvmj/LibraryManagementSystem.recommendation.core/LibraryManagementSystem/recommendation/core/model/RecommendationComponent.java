@@ -20,8 +20,8 @@ public abstract class RecommendationComponent implements Recommendation{
 	public DaftarBuku daftarbukuimpl;
 	@ManyToOne(targetEntity=LibraryManagementSystem.akun.core.AkunComponent.class)
 	public Akun akunimpl;
-	@ManyToOne(targetEntity=LibraryManagementSystem.wishlistservice.core.WishlistServiceComponent.class)
-	public WishlistService wishlistserviceimpl;
+	@ManyToOne(targetEntity=LibraryManagementSystem.wishlist.core.WishlistComponent.class)
+	public Wishlist wishlistserviceimpl;
 	protected String objectName = RecommendationComponent.class.getName();
 
 	public RecommendationComponent() {
@@ -29,7 +29,7 @@ public abstract class RecommendationComponent implements Recommendation{
 	} 
 
 	public RecommendationComponent(
-        DaftarBukuImpl daftarbukuimpl, AkunImpl akunimpl, WishlistServiceImpl wishlistserviceimpl
+        DaftarBukuImpl daftarbukuimpl, AkunImpl akunimpl, WishlistImpl wishlistserviceimpl
     ) {
         this.daftarbukuimpl = daftarbukuimpl;
         this.akunimpl = akunimpl;
@@ -42,8 +42,8 @@ public abstract class RecommendationComponent implements Recommendation{
 	public abstract AkunImpl getAkunimpl();
 	public abstract void setAkunimpl(AkunImpl akunimpl);
 	
-	public abstract WishlistServiceImpl getWishlistserviceimpl();
-	public abstract void setWishlistserviceimpl(WishlistServiceImpl wishlistserviceimpl);
+	public abstract WishlistImpl getWishlistserviceimpl();
+	public abstract void setWishlistserviceimpl(WishlistImpl wishlistserviceimpl);
 	
  
 	public abstract void getRecommendation();

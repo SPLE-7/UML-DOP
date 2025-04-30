@@ -49,16 +49,16 @@ public abstract class PeminjamanBukuDecorator extends PeminjamanBukuComponent{
 	public void setStatus(String status) {
 		record.setStatus(status);
 	}
-	public EDate getTanggalPeminjaman() {
+	public Date getTanggalPeminjaman() {
 		return record.getTanggalPeminjaman();
 	}
-	public void setTanggalPeminjaman(EDate tanggalPeminjaman) {
+	public void setTanggalPeminjaman(Date tanggalPeminjaman) {
 		record.setTanggalPeminjaman(tanggalPeminjaman);
 	}
-	public EDate getTanggalPengembalian() {
+	public Date getTanggalPengembalian() {
 		return record.getTanggalPengembalian();
 	}
-	public void setTanggalPengembalian(EDate tanggalPengembalian) {
+	public void setTanggalPengembalian(Date tanggalPengembalian) {
 		record.setTanggalPengembalian(tanggalPengembalian);
 	}
 
