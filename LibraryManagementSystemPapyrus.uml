@@ -229,7 +229,7 @@
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_9iu4ACSWEfCt35NHVF_M3w" name="DWishlistWithStatus">
-        <packagedElement xmi:type="uml:Class" xmi:id="_RWbsACSXEfCt35NHVF_M3w" name="WishlistServiceImpl">
+        <packagedElement xmi:type="uml:Class" xmi:id="_RWbsACSXEfCt35NHVF_M3w" name="WishlistImpl">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_ZLI-cCSXEfCt35NHVF_M3w" name="status" visibility="public" type="_nm7tYCW6EfCzpYilrrkP0Q" isUnique="false"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_XtYhICXCEfCzpYilrrkP0Q" name="wishlistimpl" type="_d3QI4CHREfCI6Zld1jX0fw" association="_XtRzcCXCEfCzpYilrrkP0Q">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XtZIMCXCEfCzpYilrrkP0Q"/>
@@ -455,4 +455,10 @@
   <umlvmprofile:delta xmi:id="_Xg9EICXBEfCzpYilrrkP0Q" base_Package="_1eENkCXAEfCzpYilrrkP0Q"/>
   <umlvmprofile:modifies xmi:id="_fYGKECXCEfCzpYilrrkP0Q" base_Association="_XtRzcCXCEfCzpYilrrkP0Q"/>
   <umlvmprofile:modifies xmi:id="_gB-0kCXCEfCzpYilrrkP0Q" base_Association="_cP8GUCXCEfCzpYilrrkP0Q"/>
+  <umlvmprofile:modifiedClass xmi:id="_RuEoECXYEfCt35NHVF_M3w" base_Class="_VDeVECXBEfCzpYilrrkP0Q"/>
+  <umlvmprofile:modifiedClass xmi:id="_SiNawCXYEfCt35NHVF_M3w" base_Class="_RWbsACSXEfCt35NHVF_M3w"/>
+  <umlvmprofile:adds xmi:id="_T1-vwCXYEfCt35NHVF_M3w" base_Property="_ZLI-cCSXEfCt35NHVF_M3w"/>
+  <umlvmprofile:adds xmi:id="_UkWRoCXYEfCt35NHVF_M3w" base_Operation="_7IB6sCSXEfCt35NHVF_M3w"/>
+  <umlvmprofile:adds xmi:id="_VbHhkCXYEfCt35NHVF_M3w" base_Property="_pnOF8CXBEfCzpYilrrkP0Q"/>
+  <umlvmprofile:adds xmi:id="_WQLhUCXYEfCt35NHVF_M3w" base_Operation="_xXWaYCXBEfCzpYilrrkP0Q"/>
 </xmi:XMI>
