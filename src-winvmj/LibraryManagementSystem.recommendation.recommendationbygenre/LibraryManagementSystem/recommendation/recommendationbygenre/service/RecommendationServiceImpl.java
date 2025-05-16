@@ -14,7 +14,7 @@ public class RecommendationServiceImpl extends RecommendationServiceDecorator {
     }
 
     
-	public EEList generateRecommendationGenre() {
+	public List<Buku> generateRecommendationGenre() {
 		// TODO: implement this method
 	}
 }

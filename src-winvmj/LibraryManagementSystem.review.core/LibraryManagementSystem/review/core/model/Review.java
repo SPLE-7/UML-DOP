@@ -6,9 +6,9 @@ import java.util.*;
 public interface Review {
 	public UUID getIdReview();
 	public void setIdReview(UUID idReview);
-	public EDate getPostedAt();
-	public void setPostedAt(EDate postedAt);
-	public DaftarBukuImpl getDaftarbukuimpl();
-	public void setDaftarbukuimpl(DaftarBukuImpl daftarbukuimpl);
+	public Date getPostedAt();
+	public void setPostedAt(Date postedAt);
+	public BukuImpl getDaftarbukuimpl();
+	public void setDaftarbukuimpl(BukuImpl daftarbukuimpl);
 	HashMap<String, Object> toHashMap();
 }

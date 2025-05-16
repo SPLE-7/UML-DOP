@@ -10,11 +10,11 @@ public interface PeminjamanBuku {
 	public void setStatus(String status);
 	public AkunImpl getAkunimpl();
 	public void setAkunimpl(AkunImpl akunimpl);
-	public DaftarBukuImpl getDaftarbukuimpl();
-	public void setDaftarbukuimpl(DaftarBukuImpl daftarbukuimpl);
-	public EDate getTanggalPeminjaman();
-	public void setTanggalPeminjaman(EDate tanggalPeminjaman);
-	public EDate getTanggalPengembalian();
-	public void setTanggalPengembalian(EDate tanggalPengembalian);
+	public BukuImpl getDaftarbukuimpl();
+	public void setDaftarbukuimpl(BukuImpl daftarbukuimpl);
+	public Date getTanggalPeminjaman();
+	public void setTanggalPeminjaman(Date tanggalPeminjaman);
+	public Date getTanggalPengembalian();
+	public void setTanggalPengembalian(Date tanggalPengembalian);
 	HashMap<String, Object> toHashMap();
 }

@@ -95,7 +95,7 @@ public class RecommendationResourceImpl extends RecommendationResourceDecorator 
 		return getAll(vmjExchange);
 	}
 
-	public EEList generateRecommendationGenre() {
+	public List<Buku> generateRecommendationGenre() {
 		// TODO: implement this method
 	}
 }

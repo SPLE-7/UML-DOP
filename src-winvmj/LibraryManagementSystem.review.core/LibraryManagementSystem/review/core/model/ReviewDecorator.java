@@ -43,10 +43,10 @@ public abstract class ReviewDecorator extends ReviewComponent{
 	public void setIdReview(UUID idReview) {
 		record.setIdReview(idReview);
 	}
-	public EDate getPostedAt() {
+	public Date getPostedAt() {
 		return record.getPostedAt();
 	}
-	public void setPostedAt(EDate postedAt) {
+	public void setPostedAt(Date postedAt) {
 		record.setPostedAt(postedAt);
 	}
 
