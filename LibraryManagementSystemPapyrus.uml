@@ -119,24 +119,13 @@
         </packagedElement>
         <packagedElement xmi:type="uml:Realization" xmi:id="_d7hLkCHWEfCYKd9j4aQklA" client="_TKeq4CHWEfCYKd9j4aQklA" supplier="_M-XG4CHWEfCYKd9j4aQklA"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_Pg0xsCHYEfCYKd9j4aQklA" name="DReviewBintang">
-        <packagedElement xmi:type="uml:Class" xmi:id="_8_iLUCHYEfCYKd9j4aQklA" name="ReviewImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="__8ZIkiHZEfCYKd9j4aQklA" name="reviewimpl" type="_TKeq4CHWEfCYKd9j4aQklA" association="__8YhgCHZEfCYKd9j4aQklA">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__8ZvoCHZEfCYKd9j4aQklA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__8ZvoSHZEfCYKd9j4aQklA" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_Lsf5kCHaEfCYKd9j4aQklA" name="starValue" visibility="protected">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-          </ownedAttribute>
-        </packagedElement>
-      </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_tct9sCHYEfCYKd9j4aQklA" name="DReviewKomentar">
         <packagedElement xmi:type="uml:Class" xmi:id="_HUGLYCHZEfCYKd9j4aQklA" name="ReviewImpl">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_CYf-oiHaEfCYKd9j4aQklA" name="reviewimpl" type="_TKeq4CHWEfCYKd9j4aQklA" association="_CYewgCHaEfCYKd9j4aQklA">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CYglsCHaEfCYKd9j4aQklA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CYglsSHaEfCYKd9j4aQklA" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_fJO_ECHaEfCYKd9j4aQklA" name="commentValue" visibility="protected">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_fJO_ECHaEfCYKd9j4aQklA" name="comment" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
         </packagedElement>
@@ -153,7 +142,6 @@
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0zW6cCHgEfC3faRGLZxnCQ" value="1"/>
           </ownedAttribute>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_FZ1E0CHeEfC3faRGLZxnCQ" client="_sta1cCHdEfC3faRGLZxnCQ" supplier="_RwulgCHdEfC3faRGLZxnCQ" contract="_RwulgCHdEfC3faRGLZxnCQ"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_98TmgCHhEfC3faRGLZxnCQ" name="getRecommendation"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_c7SbcCQ4EfCQ7qZbGQ1T4g" name="DRenewal">
@@ -165,53 +153,10 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_3zf0ACQ4EfCQ7qZbGQ1T4g" name="renewalCount" isUnique="false">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedAttribute>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_6o3eoCQ4EfCQ7qZbGQ1T4g" name="RequestRenewal">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_BOXL8CQ5EfCQ7qZbGQ1T4g" name="result" isUnique="false" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-            </ownedParameter>
-          </ownedOperation>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_zyL6sCQ4EfCQ7qZbGQ1T4g" name="InstanceSpecification14"/>
-      <packagedElement xmi:type="uml:Package" xmi:id="_T2B1MCQ6EfCQ7qZbGQ1T4g" name="DGenreStatistik">
-        <packagedElement xmi:type="uml:Class" xmi:id="_f1LHwCQ6EfCQ7qZbGQ1T4g" name="StatistikImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_iarKYiQ6EfCQ7qZbGQ1T4g" name="statistikimpl" type="_FwvSUCHFEfCVTpuhwdZlGw" association="_iap8QCQ6EfCQ7qZbGQ1T4g">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iarxcCQ6EfCQ7qZbGQ1T4g"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iarxcSQ6EfCQ7qZbGQ1T4g" value="1"/>
-          </ownedAttribute>
-        </packagedElement>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_x2yTECQ6EfCQ7qZbGQ1T4g" name="DAuthorStatistik">
-        <packagedElement xmi:type="uml:Class" xmi:id="_2ToR0CQ6EfCQ7qZbGQ1T4g" name="StatistikImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_44WRUiQ6EfCQ7qZbGQ1T4g" name="statistikimpl" type="_FwvSUCHFEfCVTpuhwdZlGw" association="_44UcICQ6EfCQ7qZbGQ1T4g">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_44YtkCQ6EfCQ7qZbGQ1T4g"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_44Z7sCQ6EfCQ7qZbGQ1T4g" value="1"/>
-          </ownedAttribute>
-        </packagedElement>
-      </packagedElement>
       <packagedElement xmi:type="uml:DataType" xmi:id="_Oeg78CRQEfCt35NHVF_M3w" name="UUID"/>
-      <packagedElement xmi:type="uml:Package" xmi:id="_dEhLICSUEfCt35NHVF_M3w" name="DRecommendationByGenre">
-        <packagedElement xmi:type="uml:Class" xmi:id="_ieW9oCSUEfCt35NHVF_M3w" name="RecommendationImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_MKwGwCSWEfCt35NHVF_M3w" name="recommendationimpl" type="_sta1cCHdEfC3faRGLZxnCQ" association="_MKoK8CSWEfCt35NHVF_M3w">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MKwt0CSWEfCt35NHVF_M3w"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MKwt0SSWEfCt35NHVF_M3w" value="1"/>
-          </ownedAttribute>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_DicCkCSVEfCt35NHVF_M3w" name="generateRecommendationGenre">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_VX194CSVEfCt35NHVF_M3w" type="_0Dqo8CW8EfCzpYilrrkP0Q" direction="return"/>
-          </ownedOperation>
-        </packagedElement>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_p4SjICSVEfCt35NHVF_M3w" name="DRecommendationByAuthor">
-        <packagedElement xmi:type="uml:Class" xmi:id="_sZwaUCSVEfCt35NHVF_M3w" name="RecommendationImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_NWlAsySWEfCt35NHVF_M3w" name="recommendationimpl" type="_sta1cCHdEfC3faRGLZxnCQ" association="_NWlAsCSWEfCt35NHVF_M3w">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NWm14CSWEfCt35NHVF_M3w"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NWnc8CSWEfCt35NHVF_M3w" value="1"/>
-          </ownedAttribute>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_xXUggCSVEfCt35NHVF_M3w" name="generateRecommendationAuthor">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_LFxbsCSWEfCt35NHVF_M3w" name="result" type="_0Dqo8CW8EfCzpYilrrkP0Q" direction="return"/>
-          </ownedOperation>
-        </packagedElement>
-      </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_9iu4ACSWEfCt35NHVF_M3w" name="DWishlistWithStatus">
         <packagedElement xmi:type="uml:Class" xmi:id="_RWbsACSXEfCt35NHVF_M3w" name="WishlistImpl">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_ZLI-cCSXEfCt35NHVF_M3w" name="status" visibility="public" isUnique="false">
@@ -221,12 +166,6 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XtZIMCXCEfCzpYilrrkP0Q"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XtZIMSXCEfCzpYilrrkP0Q" value="1"/>
           </ownedAttribute>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_7IB6sCSXEfCt35NHVF_M3w" name="createWishlistStatus">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="__7XG0CSXEfCt35NHVF_M3w" name="bookId" type="_Oeg78CRQEfCt35NHVF_M3w"/>
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Dzo_8CSYEfCt35NHVF_M3w" name="newStatus">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </ownedParameter>
-          </ownedOperation>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:DataType" xmi:id="_nm7tYCW6EfCzpYilrrkP0Q" name="Map&lt;UUID, String>"/>
@@ -241,12 +180,6 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cP9UcCXCEfCzpYilrrkP0Q"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cP9UcSXCEfCzpYilrrkP0Q" value="1"/>
           </ownedAttribute>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_xXWaYCXBEfCzpYilrrkP0Q" name="createWishlistNote">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_54OPQCXBEfCzpYilrrkP0Q" name="bookId" type="_Oeg78CRQEfCt35NHVF_M3w" isUnique="false"/>
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_89IxwCXBEfCzpYilrrkP0Q" name="newNotes" isUnique="false">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </ownedParameter>
-          </ownedOperation>
         </packagedElement>
       </packagedElement>
     </packagedElement>
@@ -309,12 +242,6 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2biS0CHYEfCYKd9j4aQklA" value="*"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="__8YhgCHZEfCYKd9j4aQklA" memberEnd="__8ZIkiHZEfCYKd9j4aQklA __8ZvoiHZEfCYKd9j4aQklA">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__8ZIkCHZEfCYKd9j4aQklA" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__8ZIkSHZEfCYKd9j4aQklA" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="__8ZvoiHZEfCYKd9j4aQklA" name="reviewimpl" type="_8_iLUCHYEfCYKd9j4aQklA" association="__8YhgCHZEfCYKd9j4aQklA"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_CYewgCHaEfCYKd9j4aQklA" memberEnd="_CYf-oiHaEfCYKd9j4aQklA _CYglsiHaEfCYKd9j4aQklA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CYf-oCHaEfCYKd9j4aQklA" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CYf-oSHaEfCYKd9j4aQklA" key="nature" value="UML_Nature"/>
@@ -338,30 +265,6 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_o2UqESQ4EfCQ7qZbGQ1T4g" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_o2XtYCQ4EfCQ7qZbGQ1T4g" name="peminjamanbukuimpl" type="_k7t1sCQ4EfCQ7qZbGQ1T4g" association="_o2QYoCQ4EfCQ7qZbGQ1T4g"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_iap8QCQ6EfCQ7qZbGQ1T4g" memberEnd="_iarKYiQ6EfCQ7qZbGQ1T4g _iarxciQ6EfCQ7qZbGQ1T4g">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iarKYCQ6EfCQ7qZbGQ1T4g" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iarKYSQ6EfCQ7qZbGQ1T4g" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_iarxciQ6EfCQ7qZbGQ1T4g" name="statistikimpl" type="_f1LHwCQ6EfCQ7qZbGQ1T4g" association="_iap8QCQ6EfCQ7qZbGQ1T4g"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_44UcICQ6EfCQ7qZbGQ1T4g" memberEnd="_44WRUiQ6EfCQ7qZbGQ1T4g _44bJ0CQ6EfCQ7qZbGQ1T4g">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_44WRUCQ6EfCQ7qZbGQ1T4g" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_44WRUSQ6EfCQ7qZbGQ1T4g" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_44bJ0CQ6EfCQ7qZbGQ1T4g" name="statistikimpl" type="_2ToR0CQ6EfCQ7qZbGQ1T4g" association="_44UcICQ6EfCQ7qZbGQ1T4g"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_MKoK8CSWEfCt35NHVF_M3w" memberEnd="_MKwGwCSWEfCt35NHVF_M3w _MKwt0iSWEfCt35NHVF_M3w">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MKu4oCSWEfCt35NHVF_M3w" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MKu4oSSWEfCt35NHVF_M3w" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_MKwt0iSWEfCt35NHVF_M3w" name="recommendationimpl" type="_ieW9oCSUEfCt35NHVF_M3w" association="_MKoK8CSWEfCt35NHVF_M3w"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_NWlAsCSWEfCt35NHVF_M3w" memberEnd="_NWlAsySWEfCt35NHVF_M3w _NWoEACSWEfCt35NHVF_M3w">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NWlAsSSWEfCt35NHVF_M3w" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NWlAsiSWEfCt35NHVF_M3w" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_NWoEACSWEfCt35NHVF_M3w" name="recommendationimpl" type="_sZwaUCSVEfCt35NHVF_M3w" association="_NWlAsCSWEfCt35NHVF_M3w"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_XtRzcCXCEfCzpYilrrkP0Q" memberEnd="_XtYhICXCEfCzpYilrrkP0Q _XtZIMiXCEfCzpYilrrkP0Q">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XtWE4CXCEfCzpYilrrkP0Q" source="org.eclipse.papyrus">
@@ -404,33 +307,14 @@
   <umlvmprofile:module xmi:id="_-8wRgCHOEfCSL5sBBSYZEw" base_Package="_5T8O4CHOEfCSL5sBBSYZEw"/>
   <umlvmprofile:module xmi:id="_XxXvwCHREfCI6Zld1jX0fw" base_Package="_RPf-MCHREfCI6Zld1jX0fw"/>
   <umlvmprofile:module xmi:id="_KniZcCHWEfCYKd9j4aQklA" base_Package="_GhYcYCHWEfCYKd9j4aQklA"/>
-  <umlvmprofile:delta xmi:id="_snOgICHYEfCYKd9j4aQklA" base_Package="_Pg0xsCHYEfCYKd9j4aQklA"/>
   <umlvmprofile:delta xmi:id="_ve534CHYEfCYKd9j4aQklA" base_Package="_tct9sCHYEfCYKd9j4aQklA"/>
-  <umlvmprofile:modifiedClass xmi:id="_E0Hh8CHZEfCYKd9j4aQklA" base_Class="_8_iLUCHYEfCYKd9j4aQklA"/>
   <umlvmprofile:modifiedClass xmi:id="_KwSlcCHZEfCYKd9j4aQklA" base_Class="_HUGLYCHZEfCYKd9j4aQklA"/>
   <umlvmprofile:modifies xmi:id="_DRDXQCHaEfCYKd9j4aQklA" base_Association="_CYewgCHaEfCYKd9j4aQklA"/>
-  <umlvmprofile:modifies xmi:id="_HjutYCHaEfCYKd9j4aQklA" base_Association="__8YhgCHZEfCYKd9j4aQklA"/>
-  <umlvmprofile:adds xmi:id="_Y6kdYCHaEfCYKd9j4aQklA" base_Property="_Lsf5kCHaEfCYKd9j4aQklA"/>
   <umlvmprofile:module xmi:id="_LmTqoCHdEfC3faRGLZxnCQ" base_Package="_xvL7oCHcEfC3faRGLZxnCQ"/>
   <umlvmprofile:delta xmi:id="_jTIHQCQ4EfCQ7qZbGQ1T4g" base_Package="_c7SbcCQ4EfCQ7qZbGQ1T4g"/>
   <umlvmprofile:modifies xmi:id="_rlfmECQ4EfCQ7qZbGQ1T4g" base_Association="_o2QYoCQ4EfCQ7qZbGQ1T4g"/>
   <umlvmprofile:adds xmi:id="_DrhK4CQ5EfCQ7qZbGQ1T4g" base_Property="_3zf0ACQ4EfCQ7qZbGQ1T4g"/>
-  <umlvmprofile:adds xmi:id="_EZ1CYCQ5EfCQ7qZbGQ1T4g" base_Operation="_6o3eoCQ4EfCQ7qZbGQ1T4g"/>
-  <umlvmprofile:delta xmi:id="_bdCC0CQ6EfCQ7qZbGQ1T4g" base_Package="_T2B1MCQ6EfCQ7qZbGQ1T4g"/>
-  <umlvmprofile:modifies xmi:id="_k0m2MCQ6EfCQ7qZbGQ1T4g" base_Association="_iap8QCQ6EfCQ7qZbGQ1T4g"/>
-  <umlvmprofile:delta xmi:id="_0e1TYCQ6EfCQ7qZbGQ1T4g" base_Package="_x2yTECQ6EfCQ7qZbGQ1T4g"/>
-  <umlvmprofile:modifies xmi:id="_6zcFACQ6EfCQ7qZbGQ1T4g" base_Association="_44UcICQ6EfCQ7qZbGQ1T4g"/>
   <umlvmprofile:modifiedClass xmi:id="_j87w4CRGEfCMQ6xF7T_Mbw" base_Class="_k7t1sCQ4EfCQ7qZbGQ1T4g"/>
-  <umlvmprofile:modifiedClass xmi:id="_lo-b8CRGEfCMQ6xF7T_Mbw" base_Class="_f1LHwCQ6EfCQ7qZbGQ1T4g"/>
-  <umlvmprofile:modifiedClass xmi:id="_mk-xMCRGEfCMQ6xF7T_Mbw" base_Class="_2ToR0CQ6EfCQ7qZbGQ1T4g"/>
-  <umlvmprofile:delta xmi:id="_1AbKoCSUEfCt35NHVF_M3w" base_Package="_dEhLICSUEfCt35NHVF_M3w"/>
-  <umlvmprofile:modifiedClass xmi:id="_1z8SQCSUEfCt35NHVF_M3w" base_Class="_ieW9oCSUEfCt35NHVF_M3w"/>
-  <umlvmprofile:modifiedClass xmi:id="_uoeUoCSVEfCt35NHVF_M3w" base_Class="_sZwaUCSVEfCt35NHVF_M3w"/>
-  <umlvmprofile:delta xmi:id="_veIKQCSVEfCt35NHVF_M3w" base_Package="_p4SjICSVEfCt35NHVF_M3w"/>
-  <umlvmprofile:modifies xmi:id="_RtL0kCSWEfCt35NHVF_M3w" base_Association="_MKoK8CSWEfCt35NHVF_M3w"/>
-  <umlvmprofile:modifies xmi:id="_SpBKsCSWEfCt35NHVF_M3w" base_Association="_NWlAsCSWEfCt35NHVF_M3w"/>
-  <umlvmprofile:adds xmi:id="_Te30oCSWEfCt35NHVF_M3w" base_Operation="_DicCkCSVEfCt35NHVF_M3w"/>
-  <umlvmprofile:adds xmi:id="_UNTn8CSWEfCt35NHVF_M3w" base_Operation="_xXUggCSVEfCt35NHVF_M3w"/>
   <umlvmprofile:delta xmi:id="_Q9bswCXBEfCzpYilrrkP0Q" base_Package="_9iu4ACSWEfCt35NHVF_M3w"/>
   <umlvmprofile:delta xmi:id="_Xg9EICXBEfCzpYilrrkP0Q" base_Package="_1eENkCXAEfCzpYilrrkP0Q"/>
   <umlvmprofile:modifies xmi:id="_fYGKECXCEfCzpYilrrkP0Q" base_Association="_XtRzcCXCEfCzpYilrrkP0Q"/>
@@ -438,7 +322,5 @@
   <umlvmprofile:modifiedClass xmi:id="_RuEoECXYEfCt35NHVF_M3w" base_Class="_VDeVECXBEfCzpYilrrkP0Q"/>
   <umlvmprofile:modifiedClass xmi:id="_SiNawCXYEfCt35NHVF_M3w" base_Class="_RWbsACSXEfCt35NHVF_M3w"/>
   <umlvmprofile:adds xmi:id="_T1-vwCXYEfCt35NHVF_M3w" base_Property="_ZLI-cCSXEfCt35NHVF_M3w"/>
-  <umlvmprofile:adds xmi:id="_UkWRoCXYEfCt35NHVF_M3w" base_Operation="_7IB6sCSXEfCt35NHVF_M3w"/>
   <umlvmprofile:adds xmi:id="_VbHhkCXYEfCt35NHVF_M3w" base_Property="_pnOF8CXBEfCzpYilrrkP0Q"/>
-  <umlvmprofile:adds xmi:id="_WQLhUCXYEfCt35NHVF_M3w" base_Operation="_xXWaYCXBEfCzpYilrrkP0Q"/>
 </xmi:XMI>
